@@ -236,6 +236,15 @@
                                                   },
                                                   "maxWidth": {
                                                     "type": "string"
+                                                  },
+                                                  "queryParamsStr": {
+                                                    "type": "string"
+                                                  },
+                                                  "areControlsDisplayed": {
+                                                    "type": "boolean"
+                                                  },
+                                                  "isAutoplayEnabled": {
+                                                    "type": "boolean"
                                                   }
                                                 }
                                               }
@@ -686,6 +695,30 @@
                                                         ]
                                                       },
                                                       "item": {
+                                                        "type": "string"
+                                                      }
+                                                    },
+                                                    "required": [
+                                                      "type"
+                                                    ]
+                                                  },
+                                                  {
+                                                    "type": "object",
+                                                    "properties": {
+                                                      "variableId": {
+                                                        "type": "string"
+                                                      },
+                                                      "isExecutedOnClient": {
+                                                        "type": "boolean"
+                                                      },
+                                                      "type": {
+                                                        "type": "string",
+                                                        "enum": [
+                                                          "Pop",
+                                                          "Shift"
+                                                        ]
+                                                      },
+                                                      "saveItemInVariableId": {
                                                         "type": "string"
                                                       }
                                                     },
@@ -2430,78 +2463,6 @@
                                                     ]
                                                   }
                                                 ]
-                                              }
-                                            },
-                                            "required": [
-                                              "id",
-                                              "type"
-                                            ]
-                                          },
-                                          {
-                                            "type": "object",
-                                            "properties": {
-                                              "id": {
-                                                "type": "string"
-                                              },
-                                              "outgoingEdgeId": {
-                                                "type": "string"
-                                              },
-                                              "type": {
-                                                "type": "string",
-                                                "enum": [
-                                                  "Zemantic AI"
-                                                ]
-                                              },
-                                              "blockId": {
-                                                "type": "string"
-                                              },
-                                              "options": {
-                                                "type": "object",
-                                                "properties": {
-                                                  "credentialsId": {
-                                                    "type": "string"
-                                                  },
-                                                  "projectId": {
-                                                    "type": "string"
-                                                  },
-                                                  "systemPrompt": {
-                                                    "type": "string"
-                                                  },
-                                                  "prompt": {
-                                                    "type": "string"
-                                                  },
-                                                  "query": {
-                                                    "type": "string"
-                                                  },
-                                                  "maxResults": {
-                                                    "type": "integer"
-                                                  },
-                                                  "responseMapping": {
-                                                    "type": "array",
-                                                    "items": {
-                                                      "type": "object",
-                                                      "properties": {
-                                                        "id": {
-                                                          "type": "string"
-                                                        },
-                                                        "valueToExtract": {
-                                                          "type": "string",
-                                                          "enum": [
-                                                            "Summary",
-                                                            "Results"
-                                                          ]
-                                                        },
-                                                        "variableId": {
-                                                          "type": "string"
-                                                        }
-                                                      },
-                                                      "required": [
-                                                        "id",
-                                                        "valueToExtract"
-                                                      ]
-                                                    }
-                                                  }
-                                                }
                                               }
                                             },
                                             "required": [
@@ -4572,6 +4533,15 @@
                                               },
                                               "maxWidth": {
                                                 "type": "string"
+                                              },
+                                              "queryParamsStr": {
+                                                "type": "string"
+                                              },
+                                              "areControlsDisplayed": {
+                                                "type": "boolean"
+                                              },
+                                              "isAutoplayEnabled": {
+                                                "type": "boolean"
                                               }
                                             }
                                           }
@@ -5022,6 +4992,30 @@
                                                     ]
                                                   },
                                                   "item": {
+                                                    "type": "string"
+                                                  }
+                                                },
+                                                "required": [
+                                                  "type"
+                                                ]
+                                              },
+                                              {
+                                                "type": "object",
+                                                "properties": {
+                                                  "variableId": {
+                                                    "type": "string"
+                                                  },
+                                                  "isExecutedOnClient": {
+                                                    "type": "boolean"
+                                                  },
+                                                  "type": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                      "Pop",
+                                                      "Shift"
+                                                    ]
+                                                  },
+                                                  "saveItemInVariableId": {
                                                     "type": "string"
                                                   }
                                                 },
@@ -6766,78 +6760,6 @@
                                                 ]
                                               }
                                             ]
-                                          }
-                                        },
-                                        "required": [
-                                          "id",
-                                          "type"
-                                        ]
-                                      },
-                                      {
-                                        "type": "object",
-                                        "properties": {
-                                          "id": {
-                                            "type": "string"
-                                          },
-                                          "outgoingEdgeId": {
-                                            "type": "string"
-                                          },
-                                          "type": {
-                                            "type": "string",
-                                            "enum": [
-                                              "Zemantic AI"
-                                            ]
-                                          },
-                                          "blockId": {
-                                            "type": "string"
-                                          },
-                                          "options": {
-                                            "type": "object",
-                                            "properties": {
-                                              "credentialsId": {
-                                                "type": "string"
-                                              },
-                                              "projectId": {
-                                                "type": "string"
-                                              },
-                                              "systemPrompt": {
-                                                "type": "string"
-                                              },
-                                              "prompt": {
-                                                "type": "string"
-                                              },
-                                              "query": {
-                                                "type": "string"
-                                              },
-                                              "maxResults": {
-                                                "type": "integer"
-                                              },
-                                              "responseMapping": {
-                                                "type": "array",
-                                                "items": {
-                                                  "type": "object",
-                                                  "properties": {
-                                                    "id": {
-                                                      "type": "string"
-                                                    },
-                                                    "valueToExtract": {
-                                                      "type": "string",
-                                                      "enum": [
-                                                        "Summary",
-                                                        "Results"
-                                                      ]
-                                                    },
-                                                    "variableId": {
-                                                      "type": "string"
-                                                    }
-                                                  },
-                                                  "required": [
-                                                    "id",
-                                                    "valueToExtract"
-                                                  ]
-                                                }
-                                              }
-                                            }
                                           }
                                         },
                                         "required": [
@@ -8045,6 +7967,15 @@
                                               },
                                               "maxWidth": {
                                                 "type": "string"
+                                              },
+                                              "queryParamsStr": {
+                                                "type": "string"
+                                              },
+                                              "areControlsDisplayed": {
+                                                "type": "boolean"
+                                              },
+                                              "isAutoplayEnabled": {
+                                                "type": "boolean"
                                               }
                                             }
                                           }
@@ -8495,6 +8426,30 @@
                                                     ]
                                                   },
                                                   "item": {
+                                                    "type": "string"
+                                                  }
+                                                },
+                                                "required": [
+                                                  "type"
+                                                ]
+                                              },
+                                              {
+                                                "type": "object",
+                                                "properties": {
+                                                  "variableId": {
+                                                    "type": "string"
+                                                  },
+                                                  "isExecutedOnClient": {
+                                                    "type": "boolean"
+                                                  },
+                                                  "type": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                      "Pop",
+                                                      "Shift"
+                                                    ]
+                                                  },
+                                                  "saveItemInVariableId": {
                                                     "type": "string"
                                                   }
                                                 },
@@ -10245,78 +10200,6 @@
                                           "id",
                                           "type"
                                         ]
-                                      },
-                                      {
-                                        "type": "object",
-                                        "properties": {
-                                          "id": {
-                                            "type": "string"
-                                          },
-                                          "outgoingEdgeId": {
-                                            "type": "string"
-                                          },
-                                          "type": {
-                                            "type": "string",
-                                            "enum": [
-                                              "Zemantic AI"
-                                            ]
-                                          },
-                                          "blockId": {
-                                            "type": "string"
-                                          },
-                                          "options": {
-                                            "type": "object",
-                                            "properties": {
-                                              "credentialsId": {
-                                                "type": "string"
-                                              },
-                                              "projectId": {
-                                                "type": "string"
-                                              },
-                                              "systemPrompt": {
-                                                "type": "string"
-                                              },
-                                              "prompt": {
-                                                "type": "string"
-                                              },
-                                              "query": {
-                                                "type": "string"
-                                              },
-                                              "maxResults": {
-                                                "type": "integer"
-                                              },
-                                              "responseMapping": {
-                                                "type": "array",
-                                                "items": {
-                                                  "type": "object",
-                                                  "properties": {
-                                                    "id": {
-                                                      "type": "string"
-                                                    },
-                                                    "valueToExtract": {
-                                                      "type": "string",
-                                                      "enum": [
-                                                        "Summary",
-                                                        "Results"
-                                                      ]
-                                                    },
-                                                    "variableId": {
-                                                      "type": "string"
-                                                    }
-                                                  },
-                                                  "required": [
-                                                    "id",
-                                                    "valueToExtract"
-                                                  ]
-                                                }
-                                              }
-                                            }
-                                          }
-                                        },
-                                        "required": [
-                                          "id",
-                                          "type"
-                                        ]
                                       }
                                     ]
                                   }
@@ -11148,6 +11031,12 @@
                                 },
                                 "content": {
                                   "type": "string"
+                                },
+                                "attachedFileUrls": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "string"
+                                  }
                                 }
                               },
                               "required": [
@@ -11443,6 +11332,12 @@
                               },
                               "content": {
                                 "type": "string"
+                              },
+                              "attachedFileUrls": {
+                                "type": "array",
+                                "items": {
+                                  "type": "string"
+                                }
                               }
                             },
                             "required": [
@@ -12775,40 +12670,6 @@
                               "data": {
                                 "type": "object",
                                 "properties": {
-                                  "apiKey": {
-                                    "type": "string"
-                                  }
-                                },
-                                "required": [
-                                  "apiKey"
-                                ]
-                              },
-                              "type": {
-                                "type": "string",
-                                "enum": [
-                                  "openai"
-                                ]
-                              },
-                              "workspaceId": {
-                                "type": "string"
-                              },
-                              "name": {
-                                "type": "string"
-                              }
-                            },
-                            "required": [
-                              "data",
-                              "type",
-                              "workspaceId",
-                              "name"
-                            ]
-                          },
-                          {
-                            "type": "object",
-                            "properties": {
-                              "data": {
-                                "type": "object",
-                                "properties": {
                                   "systemUserAccessToken": {
                                     "type": "string"
                                   },
@@ -12850,15 +12711,297 @@
                                   "apiKey": {
                                     "type": "string"
                                   }
-                                },
-                                "required": [
-                                  "apiKey"
-                                ]
+                                }
                               },
                               "type": {
                                 "type": "string",
                                 "enum": [
-                                  "zemanticAi"
+                                  "openai"
+                                ]
+                              },
+                              "workspaceId": {
+                                "type": "string"
+                              },
+                              "name": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "data",
+                              "type",
+                              "workspaceId",
+                              "name"
+                            ]
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "data": {
+                                "type": "object",
+                                "properties": {
+                                  "apiKey": {
+                                    "type": "string"
+                                  }
+                                }
+                              },
+                              "type": {
+                                "type": "string",
+                                "enum": [
+                                  "chat-node"
+                                ]
+                              },
+                              "workspaceId": {
+                                "type": "string"
+                              },
+                              "name": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "data",
+                              "type",
+                              "workspaceId",
+                              "name"
+                            ]
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "data": {
+                                "type": "object",
+                                "properties": {
+                                  "apiEndpoint": {
+                                    "type": "string"
+                                  },
+                                  "apiKey": {
+                                    "type": "string"
+                                  }
+                                }
+                              },
+                              "type": {
+                                "type": "string",
+                                "enum": [
+                                  "dify-ai"
+                                ]
+                              },
+                              "workspaceId": {
+                                "type": "string"
+                              },
+                              "name": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "data",
+                              "type",
+                              "workspaceId",
+                              "name"
+                            ]
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "data": {
+                                "type": "object",
+                                "properties": {
+                                  "apiKey": {
+                                    "type": "string"
+                                  }
+                                }
+                              },
+                              "type": {
+                                "type": "string",
+                                "enum": [
+                                  "mistral"
+                                ]
+                              },
+                              "workspaceId": {
+                                "type": "string"
+                              },
+                              "name": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "data",
+                              "type",
+                              "workspaceId",
+                              "name"
+                            ]
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "data": {
+                                "type": "object",
+                                "properties": {
+                                  "apiKey": {
+                                    "type": "string"
+                                  }
+                                }
+                              },
+                              "type": {
+                                "type": "string",
+                                "enum": [
+                                  "elevenlabs"
+                                ]
+                              },
+                              "workspaceId": {
+                                "type": "string"
+                              },
+                              "name": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "data",
+                              "type",
+                              "workspaceId",
+                              "name"
+                            ]
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "data": {
+                                "type": "object",
+                                "properties": {
+                                  "apiKey": {
+                                    "type": "string"
+                                  }
+                                }
+                              },
+                              "type": {
+                                "type": "string",
+                                "enum": [
+                                  "anthropic"
+                                ]
+                              },
+                              "workspaceId": {
+                                "type": "string"
+                              },
+                              "name": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "data",
+                              "type",
+                              "workspaceId",
+                              "name"
+                            ]
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "data": {
+                                "type": "object",
+                                "properties": {
+                                  "apiKey": {
+                                    "type": "string"
+                                  }
+                                }
+                              },
+                              "type": {
+                                "type": "string",
+                                "enum": [
+                                  "together-ai"
+                                ]
+                              },
+                              "workspaceId": {
+                                "type": "string"
+                              },
+                              "name": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "data",
+                              "type",
+                              "workspaceId",
+                              "name"
+                            ]
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "data": {
+                                "type": "object",
+                                "properties": {
+                                  "apiKey": {
+                                    "type": "string"
+                                  }
+                                }
+                              },
+                              "type": {
+                                "type": "string",
+                                "enum": [
+                                  "open-router"
+                                ]
+                              },
+                              "workspaceId": {
+                                "type": "string"
+                              },
+                              "name": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "data",
+                              "type",
+                              "workspaceId",
+                              "name"
+                            ]
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "data": {
+                                "type": "object",
+                                "properties": {
+                                  "baseUrl": {
+                                    "type": "string"
+                                  },
+                                  "apiKey": {
+                                    "type": "string"
+                                  }
+                                }
+                              },
+                              "type": {
+                                "type": "string",
+                                "enum": [
+                                  "nocodb"
+                                ]
+                              },
+                              "workspaceId": {
+                                "type": "string"
+                              },
+                              "name": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "data",
+                              "type",
+                              "workspaceId",
+                              "name"
+                            ]
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "data": {
+                                "type": "object",
+                                "properties": {
+                                  "apiKey": {
+                                    "type": "string"
+                                  }
+                                }
+                              },
+                              "type": {
+                                "type": "string",
+                                "enum": [
+                                  "segment"
                                 ]
                               },
                               "workspaceId": {
@@ -12980,62 +13123,24 @@
             "in": "query",
             "name": "type",
             "schema": {
-              "anyOf": [
-                {
-                  "anyOf": [
-                    {
-                      "anyOf": [
-                        {
-                          "anyOf": [
-                            {
-                              "anyOf": [
-                                {
-                                  "type": "string",
-                                  "enum": [
-                                    "stripe"
-                                  ]
-                                },
-                                {
-                                  "type": "string",
-                                  "enum": [
-                                    "smtp"
-                                  ]
-                                }
-                              ]
-                            },
-                            {
-                              "type": "string",
-                              "enum": [
-                                "google sheets"
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "string",
-                          "enum": [
-                            "openai"
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "string",
-                      "enum": [
-                        "whatsApp"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "string",
-                  "enum": [
-                    "zemanticAi"
-                  ]
-                }
+              "type": "string",
+              "enum": [
+                "smtp",
+                "google sheets",
+                "stripe",
+                "whatsApp",
+                "openai",
+                "chat-node",
+                "dify-ai",
+                "mistral",
+                "elevenlabs",
+                "anthropic",
+                "together-ai",
+                "open-router",
+                "nocodb",
+                "segment"
               ]
-            },
-            "required": true
+            }
           }
         ],
         "responses": {
@@ -13054,12 +13159,32 @@
                           "id": {
                             "type": "string"
                           },
+                          "type": {
+                            "type": "string",
+                            "enum": [
+                              "smtp",
+                              "google sheets",
+                              "stripe",
+                              "whatsApp",
+                              "openai",
+                              "chat-node",
+                              "dify-ai",
+                              "mistral",
+                              "elevenlabs",
+                              "anthropic",
+                              "together-ai",
+                              "open-router",
+                              "nocodb",
+                              "segment"
+                            ]
+                          },
                           "name": {
                             "type": "string"
                           }
                         },
                         "required": [
                           "id",
+                          "type",
                           "name"
                         ]
                       }
@@ -13067,6 +13192,741 @@
                   },
                   "required": [
                     "credentials"
+                  ]
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid input data",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error.BAD_REQUEST"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Authorization not provided",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error.UNAUTHORIZED"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Insufficient access",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error.FORBIDDEN"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error.NOT_FOUND"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error.INTERNAL_SERVER_ERROR"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/credentials/{credentialsId}": {
+      "get": {
+        "operationId": "credentials-getCredentials",
+        "summary": "Get credentials data",
+        "tags": [
+          "Credentials"
+        ],
+        "security": [
+          {
+            "Authorization": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "credentialsId",
+            "schema": {
+              "type": "string"
+            },
+            "required": true
+          },
+          {
+            "in": "query",
+            "name": "workspaceId",
+            "schema": {
+              "type": "string"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "data": {}
+                  },
+                  "required": [
+                    "name"
+                  ]
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid input data",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error.BAD_REQUEST"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Authorization not provided",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error.UNAUTHORIZED"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Insufficient access",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error.FORBIDDEN"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error.NOT_FOUND"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error.INTERNAL_SERVER_ERROR"
+                }
+              }
+            }
+          }
+        }
+      },
+      "patch": {
+        "operationId": "credentials-updateCredentials",
+        "summary": "Create credentials",
+        "tags": [
+          "Credentials"
+        ],
+        "security": [
+          {
+            "Authorization": []
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "credentialsId",
+            "schema": {
+              "type": "string"
+            },
+            "required": true
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "credentials": {
+                    "oneOf": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "type": "string"
+                          },
+                          "data": {
+                            "type": "object",
+                            "properties": {
+                              "live": {
+                                "type": "object",
+                                "properties": {
+                                  "secretKey": {
+                                    "type": "string"
+                                  },
+                                  "publicKey": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "secretKey",
+                                  "publicKey"
+                                ]
+                              },
+                              "test": {
+                                "type": "object",
+                                "properties": {
+                                  "secretKey": {
+                                    "type": "string"
+                                  },
+                                  "publicKey": {
+                                    "type": "string"
+                                  }
+                                }
+                              }
+                            },
+                            "required": [
+                              "live",
+                              "test"
+                            ]
+                          },
+                          "type": {
+                            "type": "string",
+                            "enum": [
+                              "stripe"
+                            ]
+                          },
+                          "workspaceId": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "name",
+                          "data",
+                          "type",
+                          "workspaceId"
+                        ]
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "type": "string"
+                          },
+                          "data": {
+                            "type": "object",
+                            "properties": {
+                              "host": {
+                                "type": "string"
+                              },
+                              "username": {
+                                "type": "string"
+                              },
+                              "password": {
+                                "type": "string"
+                              },
+                              "isTlsEnabled": {
+                                "type": "boolean"
+                              },
+                              "port": {
+                                "type": "number"
+                              },
+                              "from": {
+                                "type": "object",
+                                "properties": {
+                                  "email": {
+                                    "type": "string"
+                                  },
+                                  "name": {
+                                    "type": "string"
+                                  }
+                                }
+                              }
+                            },
+                            "required": [
+                              "port",
+                              "from"
+                            ]
+                          },
+                          "type": {
+                            "type": "string",
+                            "enum": [
+                              "smtp"
+                            ]
+                          },
+                          "workspaceId": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "name",
+                          "data",
+                          "type",
+                          "workspaceId"
+                        ]
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "type": "string"
+                          },
+                          "data": {
+                            "type": "object",
+                            "properties": {
+                              "refresh_token": {
+                                "type": "string",
+                                "nullable": true
+                              },
+                              "expiry_date": {
+                                "type": "number",
+                                "nullable": true
+                              },
+                              "access_token": {
+                                "type": "string",
+                                "nullable": true
+                              },
+                              "token_type": {
+                                "type": "string",
+                                "nullable": true
+                              },
+                              "id_token": {
+                                "type": "string",
+                                "nullable": true
+                              },
+                              "scope": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "type": {
+                            "type": "string",
+                            "enum": [
+                              "google sheets"
+                            ]
+                          },
+                          "workspaceId": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "name",
+                          "data",
+                          "type",
+                          "workspaceId"
+                        ]
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "type": "string"
+                          },
+                          "data": {
+                            "type": "object",
+                            "properties": {
+                              "systemUserAccessToken": {
+                                "type": "string"
+                              },
+                              "phoneNumberId": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "systemUserAccessToken",
+                              "phoneNumberId"
+                            ]
+                          },
+                          "type": {
+                            "type": "string",
+                            "enum": [
+                              "whatsApp"
+                            ]
+                          },
+                          "workspaceId": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "name",
+                          "data",
+                          "type",
+                          "workspaceId"
+                        ]
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "type": "string"
+                          },
+                          "data": {
+                            "type": "object",
+                            "properties": {
+                              "apiKey": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "type": {
+                            "type": "string",
+                            "enum": [
+                              "openai"
+                            ]
+                          },
+                          "workspaceId": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "name",
+                          "data",
+                          "type",
+                          "workspaceId"
+                        ]
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "type": "string"
+                          },
+                          "data": {
+                            "type": "object",
+                            "properties": {
+                              "apiKey": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "type": {
+                            "type": "string",
+                            "enum": [
+                              "chat-node"
+                            ]
+                          },
+                          "workspaceId": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "name",
+                          "data",
+                          "type",
+                          "workspaceId"
+                        ]
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "type": "string"
+                          },
+                          "data": {
+                            "type": "object",
+                            "properties": {
+                              "apiEndpoint": {
+                                "type": "string"
+                              },
+                              "apiKey": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "type": {
+                            "type": "string",
+                            "enum": [
+                              "dify-ai"
+                            ]
+                          },
+                          "workspaceId": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "name",
+                          "data",
+                          "type",
+                          "workspaceId"
+                        ]
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "type": "string"
+                          },
+                          "data": {
+                            "type": "object",
+                            "properties": {
+                              "apiKey": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "type": {
+                            "type": "string",
+                            "enum": [
+                              "mistral"
+                            ]
+                          },
+                          "workspaceId": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "name",
+                          "data",
+                          "type",
+                          "workspaceId"
+                        ]
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "type": "string"
+                          },
+                          "data": {
+                            "type": "object",
+                            "properties": {
+                              "apiKey": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "type": {
+                            "type": "string",
+                            "enum": [
+                              "elevenlabs"
+                            ]
+                          },
+                          "workspaceId": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "name",
+                          "data",
+                          "type",
+                          "workspaceId"
+                        ]
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "type": "string"
+                          },
+                          "data": {
+                            "type": "object",
+                            "properties": {
+                              "apiKey": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "type": {
+                            "type": "string",
+                            "enum": [
+                              "anthropic"
+                            ]
+                          },
+                          "workspaceId": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "name",
+                          "data",
+                          "type",
+                          "workspaceId"
+                        ]
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "type": "string"
+                          },
+                          "data": {
+                            "type": "object",
+                            "properties": {
+                              "apiKey": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "type": {
+                            "type": "string",
+                            "enum": [
+                              "together-ai"
+                            ]
+                          },
+                          "workspaceId": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "name",
+                          "data",
+                          "type",
+                          "workspaceId"
+                        ]
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "type": "string"
+                          },
+                          "data": {
+                            "type": "object",
+                            "properties": {
+                              "apiKey": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "type": {
+                            "type": "string",
+                            "enum": [
+                              "open-router"
+                            ]
+                          },
+                          "workspaceId": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "name",
+                          "data",
+                          "type",
+                          "workspaceId"
+                        ]
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "type": "string"
+                          },
+                          "data": {
+                            "type": "object",
+                            "properties": {
+                              "baseUrl": {
+                                "type": "string"
+                              },
+                              "apiKey": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "type": {
+                            "type": "string",
+                            "enum": [
+                              "nocodb"
+                            ]
+                          },
+                          "workspaceId": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "name",
+                          "data",
+                          "type",
+                          "workspaceId"
+                        ]
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "type": "string"
+                          },
+                          "data": {
+                            "type": "object",
+                            "properties": {
+                              "apiKey": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "type": {
+                            "type": "string",
+                            "enum": [
+                              "segment"
+                            ]
+                          },
+                          "workspaceId": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "name",
+                          "data",
+                          "type",
+                          "workspaceId"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "credentials"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "credentialsId": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "credentialsId"
                   ]
                 }
               }
@@ -14655,6 +15515,9 @@
                                               "properties": {
                                                 "id": {
                                                   "type": "string"
+                                                },
+                                                "caption": {
+                                                  "type": "string"
                                                 }
                                               },
                                               "required": [
@@ -14688,6 +15551,9 @@
                                               "type": "object",
                                               "properties": {
                                                 "id": {
+                                                  "type": "string"
+                                                },
+                                                "caption": {
                                                   "type": "string"
                                                 }
                                               },
@@ -14756,6 +15622,9 @@
                                               "type": "object",
                                               "properties": {
                                                 "id": {
+                                                  "type": "string"
+                                                },
+                                                "caption": {
                                                   "type": "string"
                                                 }
                                               },
@@ -15596,6 +16465,44 @@
               },
               "isLong": {
                 "type": "boolean"
+              },
+              "audioClip": {
+                "type": "object",
+                "properties": {
+                  "isEnabled": {
+                    "type": "boolean"
+                  },
+                  "saveVariableId": {
+                    "type": "string"
+                  },
+                  "visibility": {
+                    "type": "string",
+                    "enum": [
+                      "Auto",
+                      "Public",
+                      "Private"
+                    ]
+                  }
+                }
+              },
+              "attachments": {
+                "type": "object",
+                "properties": {
+                  "isEnabled": {
+                    "type": "boolean"
+                  },
+                  "saveVariableId": {
+                    "type": "string"
+                  },
+                  "visibility": {
+                    "type": "string",
+                    "enum": [
+                      "Auto",
+                      "Public",
+                      "Private"
+                    ]
+                  }
+                }
               }
             }
           }
@@ -16560,6 +17467,15 @@
                   },
                   "maxWidth": {
                     "type": "string"
+                  },
+                  "queryParamsStr": {
+                    "type": "string"
+                  },
+                  "areControlsDisplayed": {
+                    "type": "boolean"
+                  },
+                  "isAutoplayEnabled": {
+                    "type": "boolean"
                   }
                 }
               }
@@ -17007,6 +17923,30 @@
                         ]
                       },
                       "item": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "type"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "variableId": {
+                        "type": "string"
+                      },
+                      "isExecutedOnClient": {
+                        "type": "boolean"
+                      },
+                      "type": {
+                        "type": "string",
+                        "enum": [
+                          "Pop",
+                          "Shift"
+                        ]
+                      },
+                      "saveItemInVariableId": {
                         "type": "string"
                       }
                     },
@@ -18694,78 +19634,6 @@
               "type": {
                 "type": "string",
                 "enum": [
-                  "Zemantic AI"
-                ]
-              },
-              "blockId": {
-                "type": "string"
-              },
-              "options": {
-                "type": "object",
-                "properties": {
-                  "credentialsId": {
-                    "type": "string"
-                  },
-                  "projectId": {
-                    "type": "string"
-                  },
-                  "systemPrompt": {
-                    "type": "string"
-                  },
-                  "prompt": {
-                    "type": "string"
-                  },
-                  "query": {
-                    "type": "string"
-                  },
-                  "maxResults": {
-                    "type": "integer"
-                  },
-                  "responseMapping": {
-                    "type": "array",
-                    "items": {
-                      "type": "object",
-                      "properties": {
-                        "id": {
-                          "type": "string"
-                        },
-                        "valueToExtract": {
-                          "type": "string",
-                          "enum": [
-                            "Summary",
-                            "Results"
-                          ]
-                        },
-                        "variableId": {
-                          "type": "string"
-                        }
-                      },
-                      "required": [
-                        "id",
-                        "valueToExtract"
-                      ]
-                    }
-                  }
-                }
-              }
-            },
-            "required": [
-              "id",
-              "type"
-            ]
-          },
-          {
-            "type": "object",
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "outgoingEdgeId": {
-                "type": "string"
-              },
-              "type": {
-                "type": "string",
-                "enum": [
                   "openai"
                 ]
               },
@@ -19335,99 +20203,6 @@
               "type": {
                 "type": "string",
                 "enum": [
-                  "zemantic-ai"
-                ]
-              },
-              "options": {
-                "oneOf": [
-                  {
-                    "type": "object",
-                    "properties": {
-                      "projectId": {
-                        "type": "string"
-                      },
-                      "credentialsId": {
-                        "type": "string"
-                      }
-                    }
-                  },
-                  {
-                    "type": "object",
-                    "properties": {
-                      "projectId": {
-                        "type": "string"
-                      },
-                      "credentialsId": {
-                        "type": "string"
-                      },
-                      "action": {
-                        "type": "string",
-                        "enum": [
-                          "Search documents"
-                        ]
-                      },
-                      "query": {
-                        "type": "string"
-                      },
-                      "maxResults": {
-                        "anyOf": [
-                          {
-                            "type": "number"
-                          },
-                          {}
-                        ]
-                      },
-                      "systemPrompt": {
-                        "type": "string"
-                      },
-                      "prompt": {
-                        "type": "string"
-                      },
-                      "responseMapping": {
-                        "type": "array",
-                        "items": {
-                          "type": "object",
-                          "properties": {
-                            "item": {
-                              "type": "string",
-                              "enum": [
-                                "Summary",
-                                "Document IDs",
-                                "Texts",
-                                "Scores"
-                              ]
-                            },
-                            "variableId": {
-                              "type": "string"
-                            }
-                          }
-                        }
-                      }
-                    },
-                    "required": [
-                      "action"
-                    ]
-                  }
-                ]
-              }
-            },
-            "required": [
-              "id",
-              "type"
-            ]
-          },
-          {
-            "type": "object",
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "outgoingEdgeId": {
-                "type": "string"
-              },
-              "type": {
-                "type": "string",
-                "enum": [
                   "cal-com"
                 ]
               },
@@ -19853,6 +20628,149 @@
                           ]
                         }
                       },
+                      "tools": {
+                        "type": "array",
+                        "items": {
+                          "oneOf": [
+                            {
+                              "type": "object",
+                              "properties": {}
+                            },
+                            {
+                              "type": "object",
+                              "properties": {
+                                "type": {
+                                  "type": "string",
+                                  "enum": [
+                                    "function"
+                                  ]
+                                },
+                                "name": {
+                                  "type": "string"
+                                },
+                                "description": {
+                                  "type": "string"
+                                },
+                                "parameters": {
+                                  "type": "array",
+                                  "items": {
+                                    "oneOf": [
+                                      {
+                                        "type": "object",
+                                        "properties": {}
+                                      },
+                                      {
+                                        "type": "object",
+                                        "properties": {
+                                          "type": {
+                                            "type": "string",
+                                            "enum": [
+                                              "string"
+                                            ]
+                                          },
+                                          "name": {
+                                            "type": "string"
+                                          },
+                                          "description": {
+                                            "type": "string"
+                                          },
+                                          "required": {
+                                            "type": "boolean"
+                                          }
+                                        },
+                                        "required": [
+                                          "type"
+                                        ]
+                                      },
+                                      {
+                                        "type": "object",
+                                        "properties": {
+                                          "type": {
+                                            "type": "string",
+                                            "enum": [
+                                              "number"
+                                            ]
+                                          },
+                                          "name": {
+                                            "type": "string"
+                                          },
+                                          "description": {
+                                            "type": "string"
+                                          },
+                                          "required": {
+                                            "type": "boolean"
+                                          }
+                                        },
+                                        "required": [
+                                          "type"
+                                        ]
+                                      },
+                                      {
+                                        "type": "object",
+                                        "properties": {
+                                          "type": {
+                                            "type": "string",
+                                            "enum": [
+                                              "boolean"
+                                            ]
+                                          },
+                                          "name": {
+                                            "type": "string"
+                                          },
+                                          "description": {
+                                            "type": "string"
+                                          },
+                                          "required": {
+                                            "type": "boolean"
+                                          }
+                                        },
+                                        "required": [
+                                          "type"
+                                        ]
+                                      },
+                                      {
+                                        "type": "object",
+                                        "properties": {
+                                          "type": {
+                                            "type": "string",
+                                            "enum": [
+                                              "enum"
+                                            ]
+                                          },
+                                          "values": {
+                                            "type": "array",
+                                            "items": {
+                                              "type": "string"
+                                            }
+                                          },
+                                          "name": {
+                                            "type": "string"
+                                          },
+                                          "description": {
+                                            "type": "string"
+                                          },
+                                          "required": {
+                                            "type": "boolean"
+                                          }
+                                        },
+                                        "required": [
+                                          "type"
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                },
+                                "code": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "type"
+                              ]
+                            }
+                          ]
+                        }
+                      },
                       "responseMapping": {
                         "type": "array",
                         "items": {
@@ -20117,6 +21035,7 @@
                       "model": {
                         "type": "string",
                         "enum": [
+                          "claude-3-5-sonnet-20240620",
                           "claude-3-opus-20240229",
                           "claude-3-sonnet-20240229",
                           "claude-3-haiku-20240307",
@@ -20194,6 +21113,149 @@
                           ]
                         }
                       },
+                      "tools": {
+                        "type": "array",
+                        "items": {
+                          "oneOf": [
+                            {
+                              "type": "object",
+                              "properties": {}
+                            },
+                            {
+                              "type": "object",
+                              "properties": {
+                                "type": {
+                                  "type": "string",
+                                  "enum": [
+                                    "function"
+                                  ]
+                                },
+                                "name": {
+                                  "type": "string"
+                                },
+                                "description": {
+                                  "type": "string"
+                                },
+                                "parameters": {
+                                  "type": "array",
+                                  "items": {
+                                    "oneOf": [
+                                      {
+                                        "type": "object",
+                                        "properties": {}
+                                      },
+                                      {
+                                        "type": "object",
+                                        "properties": {
+                                          "type": {
+                                            "type": "string",
+                                            "enum": [
+                                              "string"
+                                            ]
+                                          },
+                                          "name": {
+                                            "type": "string"
+                                          },
+                                          "description": {
+                                            "type": "string"
+                                          },
+                                          "required": {
+                                            "type": "boolean"
+                                          }
+                                        },
+                                        "required": [
+                                          "type"
+                                        ]
+                                      },
+                                      {
+                                        "type": "object",
+                                        "properties": {
+                                          "type": {
+                                            "type": "string",
+                                            "enum": [
+                                              "number"
+                                            ]
+                                          },
+                                          "name": {
+                                            "type": "string"
+                                          },
+                                          "description": {
+                                            "type": "string"
+                                          },
+                                          "required": {
+                                            "type": "boolean"
+                                          }
+                                        },
+                                        "required": [
+                                          "type"
+                                        ]
+                                      },
+                                      {
+                                        "type": "object",
+                                        "properties": {
+                                          "type": {
+                                            "type": "string",
+                                            "enum": [
+                                              "boolean"
+                                            ]
+                                          },
+                                          "name": {
+                                            "type": "string"
+                                          },
+                                          "description": {
+                                            "type": "string"
+                                          },
+                                          "required": {
+                                            "type": "boolean"
+                                          }
+                                        },
+                                        "required": [
+                                          "type"
+                                        ]
+                                      },
+                                      {
+                                        "type": "object",
+                                        "properties": {
+                                          "type": {
+                                            "type": "string",
+                                            "enum": [
+                                              "enum"
+                                            ]
+                                          },
+                                          "values": {
+                                            "type": "array",
+                                            "items": {
+                                              "type": "string"
+                                            }
+                                          },
+                                          "name": {
+                                            "type": "string"
+                                          },
+                                          "description": {
+                                            "type": "string"
+                                          },
+                                          "required": {
+                                            "type": "boolean"
+                                          }
+                                        },
+                                        "required": [
+                                          "type"
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                },
+                                "code": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "type"
+                              ]
+                            }
+                          ]
+                        }
+                      },
                       "systemMessage": {
                         "type": "string"
                       },
@@ -20250,6 +21312,7 @@
                       "model": {
                         "type": "string",
                         "enum": [
+                          "claude-3-5-sonnet-20240620",
                           "claude-3-opus-20240229",
                           "claude-3-sonnet-20240229",
                           "claude-3-haiku-20240307",
@@ -21214,6 +22277,176 @@
                           "type": "object",
                           "properties": {
                             "fieldName": {
+                              "type": "string"
+                            },
+                            "value": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "required": [
+                      "action"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "id",
+              "type"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "outgoingEdgeId": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string",
+                "enum": [
+                  "segment"
+                ]
+              },
+              "options": {
+                "oneOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "credentialsId": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "credentialsId": {
+                        "type": "string"
+                      },
+                      "action": {
+                        "type": "string",
+                        "enum": [
+                          "Alias"
+                        ]
+                      },
+                      "userId": {
+                        "type": "string"
+                      },
+                      "previousId": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "action"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "credentialsId": {
+                        "type": "string"
+                      },
+                      "action": {
+                        "type": "string",
+                        "enum": [
+                          "Identify User"
+                        ]
+                      },
+                      "userId": {
+                        "type": "string"
+                      },
+                      "email": {
+                        "type": "string"
+                      },
+                      "traits": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "key": {
+                              "type": "string"
+                            },
+                            "value": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "required": [
+                      "action"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "credentialsId": {
+                        "type": "string"
+                      },
+                      "action": {
+                        "type": "string",
+                        "enum": [
+                          "Page"
+                        ]
+                      },
+                      "userId": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "category": {
+                        "type": "string"
+                      },
+                      "properties": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "key": {
+                              "type": "string"
+                            },
+                            "value": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "required": [
+                      "action"
+                    ]
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "credentialsId": {
+                        "type": "string"
+                      },
+                      "action": {
+                        "type": "string",
+                        "enum": [
+                          "Track"
+                        ]
+                      },
+                      "eventName": {
+                        "type": "string"
+                      },
+                      "userId": {
+                        "type": "string"
+                      },
+                      "properties": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "key": {
                               "type": "string"
                             },
                             "value": {
@@ -22872,6 +24105,15 @@
                               },
                               "maxWidth": {
                                 "type": "string"
+                              },
+                              "queryParamsStr": {
+                                "type": "string"
+                              },
+                              "areControlsDisplayed": {
+                                "type": "boolean"
+                              },
+                              "isAutoplayEnabled": {
+                                "type": "boolean"
                               }
                             }
                           }
@@ -23322,6 +24564,30 @@
                                     ]
                                   },
                                   "item": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "type"
+                                ]
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "variableId": {
+                                    "type": "string"
+                                  },
+                                  "isExecutedOnClient": {
+                                    "type": "boolean"
+                                  },
+                                  "type": {
+                                    "type": "string",
+                                    "enum": [
+                                      "Pop",
+                                      "Shift"
+                                    ]
+                                  },
+                                  "saveItemInVariableId": {
                                     "type": "string"
                                   }
                                 },
@@ -25066,78 +26332,6 @@
                                 ]
                               }
                             ]
-                          }
-                        },
-                        "required": [
-                          "id",
-                          "type"
-                        ]
-                      },
-                      {
-                        "type": "object",
-                        "properties": {
-                          "id": {
-                            "type": "string"
-                          },
-                          "outgoingEdgeId": {
-                            "type": "string"
-                          },
-                          "type": {
-                            "type": "string",
-                            "enum": [
-                              "Zemantic AI"
-                            ]
-                          },
-                          "blockId": {
-                            "type": "string"
-                          },
-                          "options": {
-                            "type": "object",
-                            "properties": {
-                              "credentialsId": {
-                                "type": "string"
-                              },
-                              "projectId": {
-                                "type": "string"
-                              },
-                              "systemPrompt": {
-                                "type": "string"
-                              },
-                              "prompt": {
-                                "type": "string"
-                              },
-                              "query": {
-                                "type": "string"
-                              },
-                              "maxResults": {
-                                "type": "integer"
-                              },
-                              "responseMapping": {
-                                "type": "array",
-                                "items": {
-                                  "type": "object",
-                                  "properties": {
-                                    "id": {
-                                      "type": "string"
-                                    },
-                                    "valueToExtract": {
-                                      "type": "string",
-                                      "enum": [
-                                        "Summary",
-                                        "Results"
-                                      ]
-                                    },
-                                    "variableId": {
-                                      "type": "string"
-                                    }
-                                  },
-                                  "required": [
-                                    "id",
-                                    "valueToExtract"
-                                  ]
-                                }
-                              }
-                            }
                           }
                         },
                         "required": [
@@ -25714,6 +26908,15 @@
                               },
                               "maxWidth": {
                                 "type": "string"
+                              },
+                              "queryParamsStr": {
+                                "type": "string"
+                              },
+                              "areControlsDisplayed": {
+                                "type": "boolean"
+                              },
+                              "isAutoplayEnabled": {
+                                "type": "boolean"
                               }
                             }
                           }
@@ -26164,6 +27367,30 @@
                                     ]
                                   },
                                   "item": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "type"
+                                ]
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "variableId": {
+                                    "type": "string"
+                                  },
+                                  "isExecutedOnClient": {
+                                    "type": "boolean"
+                                  },
+                                  "type": {
+                                    "type": "string",
+                                    "enum": [
+                                      "Pop",
+                                      "Shift"
+                                    ]
+                                  },
+                                  "saveItemInVariableId": {
                                     "type": "string"
                                   }
                                 },
@@ -27908,78 +29135,6 @@
                                 ]
                               }
                             ]
-                          }
-                        },
-                        "required": [
-                          "id",
-                          "type"
-                        ]
-                      },
-                      {
-                        "type": "object",
-                        "properties": {
-                          "id": {
-                            "type": "string"
-                          },
-                          "outgoingEdgeId": {
-                            "type": "string"
-                          },
-                          "type": {
-                            "type": "string",
-                            "enum": [
-                              "Zemantic AI"
-                            ]
-                          },
-                          "blockId": {
-                            "type": "string"
-                          },
-                          "options": {
-                            "type": "object",
-                            "properties": {
-                              "credentialsId": {
-                                "type": "string"
-                              },
-                              "projectId": {
-                                "type": "string"
-                              },
-                              "systemPrompt": {
-                                "type": "string"
-                              },
-                              "prompt": {
-                                "type": "string"
-                              },
-                              "query": {
-                                "type": "string"
-                              },
-                              "maxResults": {
-                                "type": "integer"
-                              },
-                              "responseMapping": {
-                                "type": "array",
-                                "items": {
-                                  "type": "object",
-                                  "properties": {
-                                    "id": {
-                                      "type": "string"
-                                    },
-                                    "valueToExtract": {
-                                      "type": "string",
-                                      "enum": [
-                                        "Summary",
-                                        "Results"
-                                      ]
-                                    },
-                                    "variableId": {
-                                      "type": "string"
-                                    }
-                                  },
-                                  "required": [
-                                    "id",
-                                    "valueToExtract"
-                                  ]
-                                }
-                              }
-                            }
                           }
                         },
                         "required": [

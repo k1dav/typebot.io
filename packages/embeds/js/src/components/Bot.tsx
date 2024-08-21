@@ -4,7 +4,7 @@ import { isDefined, isNotDefined, isNotEmpty } from '@typebot.io/lib'
 import { startChatQuery } from '@/queries/startChatQuery'
 import { ConversationContainer } from './ConversationContainer'
 import { setIsMobile } from '@/utils/isMobileSignal'
-import { BotContext, InitialChatReply, OutgoingLog } from '@/types'
+import { BotContext, OutgoingLog } from '@/types'
 import { ErrorMessage } from './ErrorMessage'
 import {
   getExistingResultIdFromStorage,
@@ -15,7 +15,12 @@ import {
 } from '@/utils/storage'
 import { setCssVariablesValue } from '@/utils/setCssVariablesValue'
 import immutableCss from '../assets/immutable.css'
-import { Font, InputBlock, StartFrom } from '@typebot.io/schemas'
+import {
+  Font,
+  InputBlock,
+  StartChatResponse,
+  StartFrom,
+} from '@typebot.io/schemas'
 import { clsx } from 'clsx'
 import { HTTPError } from 'ky'
 import { injectFont } from '@/utils/injectFont'
@@ -30,6 +35,10 @@ import {
   defaultProgressBarPosition,
 } from '@typebot.io/schemas/features/typebot/theme/constants'
 import { CorsError } from '@/utils/CorsError'
+import { Toaster, Toast } from '@ark-ui/solid'
+import { CloseIcon } from './icons/CloseIcon'
+import { toaster } from '@/utils/toaster'
+import { setBotContainer } from '@/utils/botContainerSignal'
 
 export type BotProps = {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -52,7 +61,7 @@ export type BotProps = {
 
 export const Bot = (props: BotProps & { class?: string }) => {
   const [initialChatReply, setInitialChatReply] = createSignal<
-    InitialChatReply | undefined
+    StartChatResponse | undefined
   >()
   const [customCss, setCustomCss] = createSignal('')
   const [isInitialized, setIsInitialized] = createSignal(false)
@@ -142,8 +151,25 @@ export const Bot = (props: BotProps & { class?: string }) => {
       const initialChatInStorage = getInitialChatReplyFromStorage(
         data.typebot.id
       )
-      if (initialChatInStorage) {
-        setInitialChatReply(initialChatInStorage)
+      if (
+        initialChatInStorage &&
+        initialChatInStorage.typebot.publishedAt &&
+        data.typebot.publishedAt
+      ) {
+        if (
+          new Date(initialChatInStorage.typebot.publishedAt).getTime() ===
+          new Date(data.typebot.publishedAt).getTime()
+        ) {
+          setInitialChatReply(initialChatInStorage)
+        } else {
+          // Restart chat by resetting remembered state
+          wipeExistingChatStateInStorage(data.typebot.id)
+          setInitialChatReply(data)
+          setInitialChatReplyInStorage(data, {
+            typebotId: data.typebot.id,
+            storage,
+          })
+        }
       } else {
         setInitialChatReply(data)
         setInitialChatReplyInStorage(data, {
@@ -242,7 +268,7 @@ export const Bot = (props: BotProps & { class?: string }) => {
 }
 
 type BotContentProps = {
-  initialChatReply: InitialChatReply
+  initialChatReply: StartChatResponse
   context: BotContext
   class?: string
   progressBarRef?: HTMLDivElement
@@ -260,16 +286,18 @@ const BotContent = (props: BotContentProps) => {
       key: `typebot-${props.context.typebot.id}-progressValue`,
     }
   )
-  let botContainer: HTMLDivElement | undefined
+  let botContainerElement: HTMLDivElement | undefined
 
   const resizeObserver = new ResizeObserver((entries) => {
     return setIsMobile(entries[0].target.clientWidth < 400)
   })
 
   onMount(() => {
-    if (!botContainer) return
-    resizeObserver.observe(botContainer)
-    setBotContainerHeight(`${botContainer.clientHeight}px`)
+    if (!botContainerElement) return
+    console.log('yes')
+    setBotContainer(botContainerElement)
+    resizeObserver.observe(botContainerElement)
+    setBotContainerHeight(`${botContainerElement.clientHeight}px`)
   })
 
   createEffect(() => {
@@ -279,22 +307,22 @@ const BotContent = (props: BotContentProps) => {
         family: defaultFontFamily,
       }
     )
-    if (!botContainer) return
+    if (!botContainerElement) return
     setCssVariablesValue(
       props.initialChatReply.typebot.theme,
-      botContainer,
+      botContainerElement,
       props.context.isPreview
     )
   })
 
   onCleanup(() => {
-    if (!botContainer) return
-    resizeObserver.unobserve(botContainer)
+    if (!botContainerElement) return
+    resizeObserver.unobserve(botContainerElement)
   })
 
   return (
     <div
-      ref={botContainer}
+      ref={botContainerElement}
       class={clsx(
         'relative flex w-full h-full text-base overflow-hidden flex-col justify-center items-center typebot-container',
         props.class
@@ -333,8 +361,19 @@ const BotContent = (props: BotContentProps) => {
           props.initialChatReply.typebot.settings.general?.isBrandingEnabled
         }
       >
-        <LiteBadge botContainer={botContainer} />
+        <LiteBadge botContainer={botContainerElement} />
       </Show>
+      <Toaster toaster={toaster}>
+        {(toast) => (
+          <Toast.Root>
+            <Toast.Title>{toast().title}</Toast.Title>
+            <Toast.Description>{toast().description}</Toast.Description>
+            <Toast.CloseTrigger class="absolute right-2 top-2">
+              <CloseIcon class="w-4 h-4" />
+            </Toast.CloseTrigger>
+          </Toast.Root>
+        )}
+      </Toaster>
     </div>
   )
 }

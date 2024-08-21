@@ -32,7 +32,7 @@ import { trpc } from '@/lib/trpc'
 import { EventsActions, eventsActions } from './typebotActions/events'
 import { useGroupsStore } from '@/features/graph/hooks/useGroupsStore'
 
-const autoSaveTimeout = 10000
+const autoSaveTimeout = 15000
 
 type UpdateTypebotPayload = Partial<
   Pick<
@@ -64,7 +64,7 @@ const typebotContext = createContext<
     is404: boolean
     isPublished: boolean
     isSavingLoading: boolean
-    save: () => Promise<void>
+    save: (updates?: Partial<TypebotV6>, overwrite?: boolean) => Promise<void>
     undo: () => void
     redo: () => void
     canRedo: boolean
@@ -72,6 +72,7 @@ const typebotContext = createContext<
     updateTypebot: (props: {
       updates: UpdateTypebotPayload
       save?: boolean
+      overwrite?: boolean
     }) => Promise<TypebotV6 | undefined>
     restorePublishedTypebot: () => void
   } & GroupsActions &
@@ -219,24 +220,30 @@ export const TypebotProvider = ({
   ])
 
   const saveTypebot = useCallback(
-    async (updates?: Partial<TypebotV6>) => {
+    async (updates?: Partial<TypebotV6>, overwrite?: boolean) => {
       if (!localTypebot || !typebot || isReadOnly) return
       const typebotToSave = {
         ...localTypebot,
         ...updates,
       }
-      if (dequal(omit(typebot, 'updatedAt'), omit(typebotToSave, 'updatedAt')))
+      if (
+        dequal(
+          JSON.parse(JSON.stringify(omit(typebot, 'updatedAt'))),
+          JSON.parse(JSON.stringify(omit(typebotToSave, 'updatedAt')))
+        )
+      )
         return
       const newParsedTypebot = typebotV6Schema.parse({ ...typebotToSave })
       setLocalTypebot(newParsedTypebot)
       try {
-        const {
-          typebot: { updatedAt },
-        } = await updateTypebot({
+        const { typebot } = await updateTypebot({
           typebotId: newParsedTypebot.id,
           typebot: newParsedTypebot,
         })
-        setUpdateDate(updatedAt)
+        setUpdateDate(typebot.updatedAt)
+        if (overwrite) {
+          setLocalTypebot(typebot)
+        }
       } catch {
         setLocalTypebot({
           ...localTypebot,
@@ -295,14 +302,16 @@ export const TypebotProvider = ({
   const updateLocalTypebot = async ({
     updates,
     save,
+    overwrite,
   }: {
     updates: UpdateTypebotPayload
     save?: boolean
+    overwrite?: boolean
   }) => {
     if (!localTypebot || isReadOnly) return
     const newTypebot = { ...localTypebot, ...updates }
     setLocalTypebot(newTypebot)
-    if (save) await saveTypebot(newTypebot)
+    if (save) await saveTypebot(newTypebot, overwrite)
     return newTypebot
   }
 

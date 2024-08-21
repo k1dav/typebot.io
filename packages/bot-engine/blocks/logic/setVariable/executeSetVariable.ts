@@ -4,6 +4,7 @@ import {
   SetVariableBlock,
   SetVariableHistoryItem,
   Variable,
+  VariableWithUnknowValue,
 } from '@typebot.io/schemas'
 import { byId, isEmpty } from '@typebot.io/lib'
 import { ExecuteLogicResponse } from '../../../types'
@@ -26,16 +27,19 @@ import { stringifyError } from '@typebot.io/lib/stringifyError'
 
 export const executeSetVariable = async (
   state: SessionState,
-  block: SetVariableBlock
+  block: SetVariableBlock,
+  setVariableHistory: SetVariableHistoryItem[]
 ): Promise<ExecuteLogicResponse> => {
   const { variables } = state.typebotsQueue[0].typebot
   if (!block.options?.variableId)
     return {
       outgoingEdgeId: block.outgoingEdgeId,
     }
+
   const expressionToEvaluate = await getExpressionToEvaluate(state)(
     block.options,
-    block.id
+    block.id,
+    setVariableHistory
   )
   const isCustomValue = !block.options.type || block.options.type === 'Custom'
   const isCode =
@@ -80,6 +84,7 @@ export const executeSetVariable = async (
   const { newSetVariableHistory, updatedState } = updateVariablesInSession({
     state,
     newVariables: [
+      ...parseColateralVariableChangeIfAny({ state, options: block.options }),
       {
         ...newVariable,
         isSessionVariable: sessionOnlySetVariableOptions.includes(
@@ -137,7 +142,8 @@ const getExpressionToEvaluate =
   (state: SessionState) =>
   async (
     options: SetVariableBlock['options'],
-    blockId: string
+    blockId: string,
+    setVariableHistory: SetVariableHistoryItem[]
   ): Promise<string | null> => {
     switch (options?.type) {
       case 'Contact name':
@@ -183,12 +189,18 @@ const getExpressionToEvaluate =
         return `const itemIndex = ${options.mapListItemParams?.baseListVariableId}.indexOf(${options.mapListItemParams?.baseItemVariableId})
       return ${options.mapListItemParams?.targetListVariableId}.at(itemIndex)`
       }
+      case 'Pop': {
+        return `${options.variableId} && Array.isArray(${options.variableId}) ? ${options.variableId}.slice(0, -1) : []`
+      }
+      case 'Shift': {
+        return `${options.variableId} && Array.isArray(${options.variableId}) ? ${options.variableId}.slice(1) : []`
+      }
       case 'Append value(s)': {
         const item = parseVariables(state.typebotsQueue[0].typebot.variables)(
           options.item
-        )
-        return `if(\`${item}\` === '') return ${options.variableId};
-        if(!${options.variableId}) return [\`${item}\`];
+        ).replaceAll('`', '\\`')
+        if (isEmpty(item)) return `return ${options.variableId}`
+        return `if(!${options.variableId}) return [\`${item}\`];
         if(!Array.isArray(${options.variableId})) return [${options.variableId}, \`${item}\`];
         return (${options.variableId}).concat(\`${item}\`);`
       }
@@ -219,6 +231,8 @@ const getExpressionToEvaluate =
           typebot: typebotWithEmptyVariables,
           stopAtBlockId: blockId,
           ...props,
+          setVariableHistory:
+            props.setVariableHistory.concat(setVariableHistory),
         })
         return (
           'return `' +
@@ -246,7 +260,7 @@ const toISOWithTz = (date: Date, timeZone: string) => {
 }
 
 type ParsedTranscriptProps = {
-  answers: Pick<Answer, 'blockId' | 'content'>[]
+  answers: Pick<Answer, 'blockId' | 'content' | 'attachedFileUrls'>[]
   setVariableHistory: Pick<
     SetVariableHistoryItem,
     'blockId' | 'variableId' | 'value'
@@ -272,6 +286,10 @@ const parsePreviewTranscriptProps = async (
     visitedEdges: state.previewMetadata.visitedEdges ?? [],
   }
 }
+
+type UnifiedAnswersFromDB = (ParsedTranscriptProps['answers'][number] & {
+  createdAt: Date
+})[]
 
 const parseResultTranscriptProps = async (
   state: SessionState
@@ -299,6 +317,7 @@ const parseResultTranscriptProps = async (
           blockId: true,
           content: true,
           createdAt: true,
+          attachedFileUrls: true,
         },
       },
       setVariableHistory: {
@@ -313,8 +332,8 @@ const parseResultTranscriptProps = async (
   })
   if (!result) return
   return {
-    answers: result.answersV2
-      .concat(result.answers)
+    answers: (result.answersV2 as UnifiedAnswersFromDB)
+      .concat(result.answers as UnifiedAnswersFromDB)
       .sort((a, b) => a.createdAt.getTime() - b.createdAt.getTime()),
     setVariableHistory: (
       result.setVariableHistory as SetVariableHistoryItem[]
@@ -323,4 +342,31 @@ const parseResultTranscriptProps = async (
       .sort((a, b) => a.index - b.index)
       .map((edge) => edge.edgeId),
   }
+}
+
+const parseColateralVariableChangeIfAny = ({
+  state,
+  options,
+}: {
+  state: SessionState
+  options: SetVariableBlock['options']
+}): VariableWithUnknowValue[] => {
+  if (!options || (options.type !== 'Pop' && options.type !== 'Shift'))
+    return []
+  const listVariableValue = state.typebotsQueue[0].typebot.variables.find(
+    (v) => v.id === options.variableId
+  )?.value
+  const variable = state.typebotsQueue[0].typebot.variables.find(
+    (v) => v.id === options.saveItemInVariableId
+  )
+  if (!variable || !listVariableValue) return []
+  return [
+    {
+      ...variable,
+      value:
+        options.type === 'Pop'
+          ? listVariableValue.at(-1)
+          : listVariableValue.at(0),
+    },
+  ]
 }

@@ -6,7 +6,7 @@ import {
   SessionState,
   SetVariableHistoryItem,
 } from '@typebot.io/schemas'
-import { isEmpty, isNotEmpty } from '@typebot.io/lib'
+import { isNotEmpty } from '@typebot.io/lib'
 import {
   isBubbleBlock,
   isInputBlock,
@@ -139,7 +139,7 @@ export const executeGroup = async (
       }
     const executionResponse = (
       isLogicBlock(block)
-        ? await executeLogic(newSessionState)(block)
+        ? await executeLogic(newSessionState)(block, setVariableHistory)
         : isIntegrationBlock(block)
         ? await executeIntegration(newSessionState)(block)
         : null
@@ -298,8 +298,7 @@ export const parseInput =
       }
       case InputBlockType.NUMBER: {
         const parsedBlock = deepParseVariables(
-          state.typebotsQueue[0].typebot.variables,
-          { removeEmptyStrings: true }
+          state.typebotsQueue[0].typebot.variables
         )({
           ...block,
           prefilledValue: getPrefilledInputValue(
@@ -327,8 +326,7 @@ export const parseInput =
       }
       case InputBlockType.RATING: {
         const parsedBlock = deepParseVariables(
-          state.typebotsQueue[0].typebot.variables,
-          { removeEmptyStrings: true }
+          state.typebotsQueue[0].typebot.variables
         )({
           ...block,
           prefilledValue: getPrefilledInputValue(
@@ -346,9 +344,7 @@ export const parseInput =
         }
       }
       default: {
-        return deepParseVariables(state.typebotsQueue[0].typebot.variables, {
-          removeEmptyStrings: true,
-        })({
+        return deepParseVariables(state.typebotsQueue[0].typebot.variables)({
           ...block,
           runtimeOptions: await computeRuntimeOptions(state)(block),
           prefilledValue: getPrefilledInputValue(

@@ -48,24 +48,24 @@ type Props = {
   isInputPrefillEnabled: boolean
   hasError: boolean
   onTransitionEnd: () => void
-  onSubmit: (answer: string) => void
+  onSubmit: (content: InputSubmitContent) => void
   onSkip: () => void
 }
 
 export const InputChatBlock = (props: Props) => {
-  const [answer, setAnswer] = persist(createSignal<string>(), {
+  const [answer, setAnswer] = persist(createSignal<InputSubmitContent>(), {
     key: `typebot-${props.context.typebot.id}-input-${props.chunkIndex}`,
     storage: props.context.storage,
   })
-  const [formattedMessage, setFormattedMessage] = createSignal<string>()
 
-  const handleSubmit = async ({ label, value }: InputSubmitContent) => {
-    setAnswer(label ?? value)
-    props.onSubmit(value ?? label)
+  const handleSubmit = async (content: InputSubmitContent) => {
+    console.log(content)
+    setAnswer(content)
+    props.onSubmit(content)
   }
 
   const handleSkip = (label: string) => {
-    setAnswer(label)
+    setAnswer({ type: 'text', value: label })
     props.onSkip()
   }
 
@@ -73,14 +73,19 @@ export const InputChatBlock = (props: Props) => {
     const formattedMessage = formattedMessages().findLast(
       (message) => props.chunkIndex === message.inputIndex
     )?.formattedMessage
-    if (formattedMessage) setFormattedMessage(formattedMessage)
+    if (formattedMessage && props.block.type !== InputBlockType.FILE)
+      setAnswer((answer) =>
+        answer?.type === 'text'
+          ? { ...answer, label: formattedMessage }
+          : answer
+      )
   })
 
   return (
     <Switch>
       <Match when={answer() && !props.hasError}>
         <GuestBubble
-          message={formattedMessage() ?? (answer() as string)}
+          answer={answer()}
           showAvatar={
             props.guestAvatar?.isEnabled ?? defaultGuestAvatarIsEnabled
           }
@@ -107,7 +112,9 @@ export const InputChatBlock = (props: Props) => {
             block={props.block}
             chunkIndex={props.chunkIndex}
             isInputPrefillEnabled={props.isInputPrefillEnabled}
-            existingAnswer={props.hasError ? answer() : undefined}
+            existingAnswer={
+              props.hasError ? getAnswerValue(answer()!) : undefined
+            }
             onTransitionEnd={props.onTransitionEnd}
             onSubmit={handleSubmit}
             onSkip={handleSkip}
@@ -116,6 +123,11 @@ export const InputChatBlock = (props: Props) => {
       </Match>
     </Switch>
   )
+}
+
+const getAnswerValue = (answer?: InputSubmitContent) => {
+  if (!answer) return
+  return answer.type === 'text' ? answer.value : answer.url
 }
 
 const Input = (props: {
@@ -136,6 +148,7 @@ const Input = (props: {
 
   const submitPaymentSuccess = () =>
     props.onSubmit({
+      type: 'text',
       value:
         (props.block.options as PaymentInputBlock['options'])?.labels
           ?.success ?? defaultPaymentInputOptions.labels.success,
@@ -147,6 +160,7 @@ const Input = (props: {
         <TextInput
           block={props.block as TextInputBlock}
           defaultValue={getPrefilledValue()}
+          context={props.context}
           onSubmit={onSubmit}
         />
       </Match>

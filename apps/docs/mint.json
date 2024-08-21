@@ -122,12 +122,12 @@
                 "editor/blocks/integrations/chatwoot",
                 "editor/blocks/integrations/meta-pixel",
                 "editor/blocks/integrations/openai",
-                "editor/blocks/integrations/zemantic-ai",
                 "editor/blocks/integrations/mistral",
                 "editor/blocks/integrations/elevenlabs",
                 "editor/blocks/integrations/anthropic",
                 "editor/blocks/integrations/dify-ai",
-                "editor/blocks/integrations/nocodb"
+                "editor/blocks/integrations/nocodb",
+                "editor/blocks/integrations/segment"
               ]
             }
           ]
@@ -177,6 +177,11 @@
             "deploy/whatsapp/overview",
             "deploy/whatsapp/create-meta-app"
           ]
+        },
+        {
+          "group": "API",
+          "icon": "code-simple",
+          "pages": ["deploy/api/overview"]
         }
       ]
     },

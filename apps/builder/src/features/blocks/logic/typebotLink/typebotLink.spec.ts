@@ -46,8 +46,8 @@ test('should be configurable', async ({ page }) => {
   await page.getByLabel('Clear').click()
 
   await page.click('text=Test')
-  await page.locator('typebot-standard').locator('input').fill('Hello there!')
-  await page.locator('typebot-standard').locator('input').press('Enter')
+  await page.getByPlaceholder('Type your answer...').fill('Hello there!')
+  await page.getByPlaceholder('Type your answer...').press('Enter')
   await expect(
     page.locator('typebot-standard').locator('text=Hello there!')
   ).toBeVisible()
@@ -57,7 +57,7 @@ test('should be configurable', async ({ page }) => {
   await page.waitForTimeout(1000)
   await page.getByTestId('selected-item-label').first().click({ force: true })
   await page.click('button >> text=Current typebot')
-  await page.getByRole('textbox').nth(1).click()
+  await page.getByRole('textbox').nth(2).click()
   await page.click('button >> text=Hello')
 
   await page.click('text=Test')

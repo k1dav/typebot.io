@@ -45,6 +45,13 @@ export const getServerSideProps: GetServerSideProps = async (
   const { host, forwardedHost } = getHost(context.req)
   log(`host: ${host}`)
   log(`forwardedHost: ${forwardedHost}`)
+  const protocol =
+    context.req.headers['x-forwarded-proto'] === 'https' ||
+    (context.req.socket as unknown as { encrypted: boolean }).encrypted
+      ? 'https'
+      : 'http'
+
+  log(`Request protocol: ${protocol}`)
   try {
     if (!host) return { props: {} }
     const viewerUrls = env.NEXT_PUBLIC_VIEWER_URL
@@ -71,7 +78,8 @@ export const getServerSideProps: GetServerSideProps = async (
       props: {
         publishedTypebot,
         incompatibleBrowser,
-        url: `https://${forwardedHost ?? host}${pathname}`,
+        isMatchingViewerUrl,
+        url: `${protocol}://${forwardedHost ?? host}${pathname}`,
       },
     }
   } catch (err) {
@@ -80,7 +88,7 @@ export const getServerSideProps: GetServerSideProps = async (
   return {
     props: {
       incompatibleBrowser,
-      url: `https://${forwardedHost ?? host}${pathname}`,
+      url: `${protocol}://${forwardedHost ?? host}${pathname}`,
     },
   }
 }
@@ -196,6 +204,7 @@ const App = ({
   isIE: boolean
   customHeadCode: string | null
   url: string
+  isMatchingViewerUrl?: boolean
   publishedTypebot:
     | TypebotPageProps['publishedTypebot']
     | Pick<
@@ -231,6 +240,7 @@ const App = ({
   ) : (
     <TypebotPageV3
       url={props.url}
+      isMatchingViewerUrl={props.isMatchingViewerUrl}
       name={publishedTypebot.name}
       publicId={publishedTypebot.publicId}
       isHideQueryParamsEnabled={
