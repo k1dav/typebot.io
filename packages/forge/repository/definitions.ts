@@ -10,7 +10,6 @@ import { chatNodeBlock } from '@typebot.io/chat-node-block'
 import { calComBlock } from '@typebot.io/cal-com-block'
 import { openAIBlock } from '@typebot.io/openai-block'
 import { nocodbBlock } from '@typebot.io/nocodb-block'
-import { litellmBlock } from '@typebot.io/litellm-block'
 import { segmentBlock } from '@typebot.io/segment-block'
 import { groqBlock } from '@typebot.io/groq-block'
 
@@ -26,7 +25,6 @@ export const forgedBlocks = {
   [togetherAiBlock.id]: togetherAiBlock,
   [openRouterBlock.id]: openRouterBlock,
   [nocodbBlock.id]: nocodbBlock,
-  [litellmBlock.id]: litellmBlock,
   [segmentBlock.id]: segmentBlock,
   [groqBlock.id]: groqBlock,
 }

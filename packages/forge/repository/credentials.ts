@@ -16,8 +16,6 @@ import { togetherAiBlock } from '@typebot.io/together-ai-block'
 import { togetherAiCredentialsSchema } from '@typebot.io/together-ai-block/schemas'
 import { nocodbBlock } from '@typebot.io/nocodb-block'
 import { nocodbCredentialsSchema } from '@typebot.io/nocodb-block/schemas'
-import { litellmBlock } from '@typebot.io/litellm-block'
-import { litellmCredentialsSchema } from '@typebot.io/litellm-block/schemas'
 import { segmentBlock } from '@typebot.io/segment-block'
 import { segmentCredentialsSchema } from '@typebot.io/segment-block/schemas'
 import { groqBlock } from '@typebot.io/groq-block'
@@ -33,7 +31,6 @@ export const forgedCredentialsSchemas = {
   [togetherAiBlock.id]: togetherAiCredentialsSchema,
   [openRouterBlock.id]: openRouterCredentialsSchema,
   [nocodbBlock.id]: nocodbCredentialsSchema,
-  [litellmBlock.id]: litellmCredentialsSchema,
   [segmentBlock.id]: segmentCredentialsSchema,
   [groqBlock.id]: groqCredentialsSchema,
 }

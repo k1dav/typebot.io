@@ -8,9 +8,9 @@ export const openAIVoices = [
 ] as const
 
 export const modelsWithImageUrlSupport = [
-  'gpt-4-turbo*',
-  'gpt-4o*',
-  'gpt-4*vision-preview',
+  '*gpt-4-turbo*',
+  '*gpt-4o*',
+  '*gpt-4*vision-preview',
 ]
 
 export const excludedModelsFromImageUrlSupport = ['gpt-4-turbo-preview']

@@ -15,6 +15,7 @@ export const auth = createAuth({
       isDebounceDisabled: true,
     }),
     baseUrl: option.string.layout({
+      isRequired: true,
       label: 'Base URL',
       defaultValue: 'https://api.openai.com/v1',
       moreInfoTooltip:
