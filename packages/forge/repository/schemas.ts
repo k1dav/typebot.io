@@ -25,6 +25,8 @@ import { litellmBlock } from '@typebot.io/litellm-block'
 import { litellmBlockSchema } from '@typebot.io/litellm-block/schemas'
 import { segmentBlock } from '@typebot.io/segment-block'
 import { segmentBlockSchema } from '@typebot.io/segment-block/schemas'
+import { groqBlock } from '@typebot.io/groq-block'
+import { groqBlockSchema } from '@typebot.io/groq-block/schemas'
 
 export const forgedBlockSchemas = {
   [openAIBlock.id]: openAIBlockSchema,
@@ -40,4 +42,5 @@ export const forgedBlockSchemas = {
   [nocodbBlock.id]: nocodbBlockSchema,
   [litellmBlock.id]: litellmBlockSchema,
   [segmentBlock.id]: segmentBlockSchema,
+  [groqBlock.id]: groqBlockSchema,
 }

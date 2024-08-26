@@ -132,7 +132,7 @@ importers:
         version: 29.0.1(@types/react@18.2.15)(class-variance-authority@0.7.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(tailwind-merge@2.5.2)
       '@udecode/plate-basic-marks':
         specifier: 30.5.3
-        version: 30.5.3(@udecode/plate-common@30.4.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)
+        version: 30.5.3(@udecode/plate-common@30.4.5(@types/react@18.2.15)(immer@10.0.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(scheduler@0.23.2)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)
       '@udecode/plate-common':
         specifier: 30.4.5
         version: 30.4.5(@types/react@18.2.15)(immer@10.0.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(scheduler@0.23.2)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)
@@ -141,10 +141,10 @@ importers:
         version: 30.4.5(@types/react@18.2.15)(immer@10.0.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(scheduler@0.23.2)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)
       '@udecode/plate-floating':
         specifier: 30.5.3
-        version: 30.5.3(@udecode/plate-common@30.4.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)
+        version: 30.5.3(@udecode/plate-common@30.4.5(@types/react@18.2.15)(immer@10.0.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(scheduler@0.23.2)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)
       '@udecode/plate-link':
         specifier: 30.5.3
-        version: 30.5.3(@udecode/plate-common@30.4.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)
+        version: 30.5.3(@udecode/plate-common@30.4.5(@types/react@18.2.15)(immer@10.0.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(scheduler@0.23.2)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)
       '@uiw/codemirror-extensions-langs':
         specifier: 4.21.24
         version: 4.21.24(@codemirror/autocomplete@6.18.0(@codemirror/language@6.10.2)(@codemirror/state@6.4.1)(@codemirror/view@6.32.0)(@lezer/common@1.2.1))(@codemirror/language-data@6.5.1(@codemirror/view@6.32.0))(@codemirror/language@6.10.2)(@codemirror/legacy-modes@6.4.0)(@codemirror/state@6.4.1)(@codemirror/view@6.32.0)(@lezer/common@1.2.1)(@lezer/highlight@1.2.1)(@lezer/javascript@1.4.17)(@lezer/lr@1.4.2)
@@ -429,8 +429,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/prisma
       ai:
-        specifier: 3.2.22
-        version: 3.2.22(openai@4.47.1)(react@18.2.0)(solid-js@1.7.8)(svelte@4.2.18)(vue@3.4.37(typescript@5.4.5))(zod@3.22.4)
+        specifier: 3.3.15
+        version: 3.3.15(openai@4.47.1)(react@18.2.0)(solid-js@1.7.8)(sswr@2.1.0(svelte@4.2.18))(svelte@4.2.18)(vue@3.4.37(typescript@5.4.5))(zod@3.22.4)
       bot-engine:
         specifier: workspace:*
         version: link:../../packages/deprecated/bot-engine
@@ -732,8 +732,8 @@ importers:
         specifier: workspace:*
         version: link:../variables
       ai:
-        specifier: 3.2.22
-        version: 3.2.22(openai@4.52.7)(react@18.2.0)(solid-js@1.7.8)(svelte@4.2.18)(vue@3.4.37(typescript@5.4.5))(zod@3.22.4)
+        specifier: 3.3.15
+        version: 3.3.15(openai@4.52.7)(react@18.2.0)(solid-js@1.7.8)(sswr@2.1.0(svelte@4.2.18))(svelte@4.2.18)(vue@3.4.37(typescript@5.4.5))(zod@3.22.4)
       ky:
         specifier: 1.2.4
         version: 1.2.4
@@ -783,8 +783,8 @@ importers:
         specifier: 30.4.5
         version: 30.4.5(@types/react@18.2.15)(immer@10.0.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(scheduler@0.23.2)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)
       ai:
-        specifier: 3.2.22
-        version: 3.2.22(openai@4.47.1)(react@18.2.0)(solid-js@1.7.8)(svelte@4.2.18)(vue@3.4.37(typescript@5.4.5))(zod@3.22.4)
+        specifier: 3.3.15
+        version: 3.3.15(openai@4.47.1)(react@18.2.0)(solid-js@1.7.8)(sswr@2.1.0(svelte@4.2.18))(svelte@4.2.18)(vue@3.4.37(typescript@5.4.5))(zod@3.22.4)
       chrono-node:
         specifier: 2.7.6
         version: 2.7.6
@@ -972,7 +972,7 @@ importers:
         version: 2.8.8
       ts-jest:
         specifier: 29.0.5
-        version: 29.0.5(@babel/core@7.22.9)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.22.9))(jest@29.4.1(@types/node@20.4.2)(babel-plugin-macros@3.1.0))(typescript@5.4.5)
+        version: 29.0.5(@babel/core@7.22.9)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.22.9))(esbuild@0.15.18)(jest@29.4.1(@types/node@20.4.2)(babel-plugin-macros@3.1.0))(typescript@5.4.5)
       tsup:
         specifier: 6.5.0
         version: 6.5.0(@swc/core@1.3.101)(postcss@8.4.41)(typescript@5.4.5)
@@ -1028,8 +1028,8 @@ importers:
   packages/embeds/js:
     dependencies:
       '@ai-sdk/ui-utils':
-        specifier: 0.0.12
-        version: 0.0.12(zod@3.22.4)
+        specifier: 0.0.36
+        version: 0.0.36(zod@3.22.4)
       '@ark-ui/solid':
         specifier: 3.3.0
         version: 3.3.0(@internationalized/date@3.5.4)(solid-js@1.7.8)
@@ -1335,8 +1335,8 @@ importers:
         specifier: workspace:*
         version: link:../openai
       ai:
-        specifier: 3.2.22
-        version: 3.2.22(openai@4.52.7)(react@18.2.0)(solid-js@1.7.8)(svelte@4.2.18)(vue@3.4.37(typescript@5.4.5))(zod@3.22.4)
+        specifier: 3.3.15
+        version: 3.3.15(openai@4.52.7)(react@18.2.0)(solid-js@1.7.8)(sswr@2.1.0(svelte@4.2.18))(svelte@4.2.18)(vue@3.4.37(typescript@5.4.5))(zod@3.22.4)
       ky:
         specifier: 1.2.4
         version: 1.2.4
@@ -1402,8 +1402,8 @@ importers:
   packages/forge/blocks/difyAi:
     dependencies:
       ai:
-        specifier: 3.2.22
-        version: 3.2.22(openai@4.52.7)(react@18.2.0)(solid-js@1.7.8)(svelte@4.2.18)(vue@3.4.37(typescript@5.4.5))(zod@3.22.4)
+        specifier: 3.3.15
+        version: 3.3.15(openai@4.52.7)(react@18.2.0)(solid-js@1.7.8)(sswr@2.1.0(svelte@4.2.18))(svelte@4.2.18)(vue@3.4.37(typescript@5.4.5))(zod@3.22.4)
     devDependencies:
       '@typebot.io/forge':
         specifier: workspace:*
@@ -1446,17 +1446,11 @@ importers:
         specifier: 5.4.5
         version: 5.4.5
 
-  packages/forge/blocks/litellm:
+  packages/forge/blocks/groq:
     dependencies:
-      '@ai-sdk/openai':
-        specifier: 0.0.31
-        version: 0.0.31(zod@3.22.4)
-      ai:
-        specifier: 3.2.1
-        version: 3.2.1(openai@4.47.1)(react@18.2.0)(solid-js@1.7.8)(svelte@4.2.18)(vue@3.4.37(typescript@5.4.5))(zod@3.22.4)
-      openai:
-        specifier: 4.47.1
-        version: 4.47.1
+      ky:
+        specifier: 1.2.4
+        version: 1.2.4
     devDependencies:
       '@typebot.io/forge':
         specifier: workspace:*
@@ -1464,18 +1458,15 @@ importers:
       '@typebot.io/lib':
         specifier: workspace:*
         version: link:../../../lib
+      '@typebot.io/openai-block':
+        specifier: workspace:*
+        version: link:../openai
       '@typebot.io/tsconfig':
         specifier: workspace:*
         version: link:../../../tsconfig
-      '@typebot.io/variables':
-        specifier: workspace:*
-        version: link:../../../variables
       '@types/react':
         specifier: 18.2.15
         version: 18.2.15
-      ky:
-        specifier: 1.2.4
-        version: 1.2.4
       typescript:
         specifier: 5.4.5
         version: 5.4.5
@@ -1492,8 +1483,8 @@ importers:
         specifier: workspace:*
         version: link:../openai
       ai:
-        specifier: 3.2.22
-        version: 3.2.22(openai@4.52.7)(react@18.2.0)(solid-js@1.7.8)(svelte@4.2.18)(vue@3.4.37(typescript@5.4.5))(zod@3.22.4)
+        specifier: 3.3.15
+        version: 3.3.15(openai@4.52.7)(react@18.2.0)(solid-js@1.7.8)(sswr@2.1.0(svelte@4.2.18))(svelte@4.2.18)(vue@3.4.37(typescript@5.4.5))(zod@3.22.4)
       ky:
         specifier: 1.2.4
         version: 1.2.4
@@ -1572,8 +1563,8 @@ importers:
         specifier: workspace:*
         version: link:../../../ai
       ai:
-        specifier: 3.2.22
-        version: 3.2.22(openai@4.52.7)(react@18.2.0)(solid-js@1.7.8)(svelte@4.2.18)(vue@3.4.37(typescript@5.4.5))(zod@3.22.4)
+        specifier: 3.3.15
+        version: 3.3.15(openai@4.52.7)(react@18.2.0)(solid-js@1.7.8)(sswr@2.1.0(svelte@4.2.18))(svelte@4.2.18)(vue@3.4.37(typescript@5.4.5))(zod@3.22.4)
       openai:
         specifier: 4.52.7
         version: 4.52.7
@@ -1722,9 +1713,9 @@ importers:
       '@typebot.io/forge':
         specifier: workspace:*
         version: link:../core
-      '@typebot.io/litellm-block':
+      '@typebot.io/groq-block':
         specifier: workspace:*
-        version: link:../blocks/litellm
+        version: link:../blocks/groq
       '@typebot.io/mistral-block':
         specifier: workspace:*
         version: link:../blocks/mistral
@@ -1757,34 +1748,34 @@ importers:
         version: 10.40.0
       '@udecode/plate-basic-marks':
         specifier: 30.5.3
-        version: 30.5.3(@udecode/plate-common@30.4.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)
+        version: 30.5.3(@udecode/plate-common@30.4.5(@types/react@18.2.15)(immer@10.0.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(scheduler@0.23.2)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)
       '@udecode/plate-block-quote':
         specifier: 30.5.3
-        version: 30.5.3(@udecode/plate-common@30.4.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)
+        version: 30.5.3(@udecode/plate-common@30.4.5(@types/react@18.2.15)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)
       '@udecode/plate-code-block':
         specifier: 30.7.0
-        version: 30.7.0(@udecode/plate-common@30.4.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)
+        version: 30.7.0(@udecode/plate-common@30.4.5(@types/react@18.2.15)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)
       '@udecode/plate-common':
         specifier: 30.4.5
         version: 30.4.5(@types/react@18.2.15)(immer@10.0.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(scheduler@0.23.2)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)
       '@udecode/plate-heading':
         specifier: 30.5.3
-        version: 30.5.3(@udecode/plate-common@30.4.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)
+        version: 30.5.3(@udecode/plate-common@30.4.5(@types/react@18.2.15)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)
       '@udecode/plate-horizontal-rule':
         specifier: 30.5.3
-        version: 30.5.3(@udecode/plate-common@30.4.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)
+        version: 30.5.3(@udecode/plate-common@30.4.5(@types/react@18.2.15)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)
       '@udecode/plate-link':
         specifier: 30.5.3
-        version: 30.5.3(@udecode/plate-common@30.4.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)
+        version: 30.5.3(@udecode/plate-common@30.4.5(@types/react@18.2.15)(immer@10.0.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(scheduler@0.23.2)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)
       '@udecode/plate-list':
         specifier: 30.5.3
-        version: 30.5.3(@udecode/plate-common@30.4.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)
+        version: 30.5.3(@udecode/plate-common@30.4.5(@types/react@18.2.15)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)
       '@udecode/plate-media':
         specifier: 30.5.3
-        version: 30.5.3(@udecode/plate-common@30.4.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)
+        version: 30.5.3(@udecode/plate-common@30.4.5(@types/react@18.2.15)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)
       '@udecode/plate-paragraph':
         specifier: 30.5.3
-        version: 30.5.3(@udecode/plate-common@30.4.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)
+        version: 30.5.3(@udecode/plate-common@30.4.5(@types/react@18.2.15)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)
       escape-html:
         specifier: 1.0.3
         version: 1.0.3
@@ -2167,8 +2158,8 @@ packages:
     peerDependencies:
       zod: ^3.0.0
 
-  '@ai-sdk/provider-utils@0.0.14':
-    resolution: {integrity: sha512-PCQFN3MlC6DShS/81IFU9NVvt9OekQGiZTEowRc2AwAwWrDsv7er3UkcMswFAL/Z7xZKjgu0dZTNH1z9oUlo7A==}
+  '@ai-sdk/provider-utils@1.0.15':
+    resolution: {integrity: sha512-icZqf2kpV8XdSViei4pX9ylYcVn+pk9AnVquJJGjGQGnwZ/5OgShqnFcLYrMjQfQcSVkz0PxdQVsIhZHzlT9Og==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: ^3.0.0
@@ -2194,16 +2185,16 @@ packages:
       zod:
         optional: true
 
-  '@ai-sdk/provider@0.0.10':
-    resolution: {integrity: sha512-NzkrtREQpHID1cTqY/C4CI30PVOaXWKYytDR2EcytmFgnP7Z6+CrGIA/YCnNhYAuUm6Nx+nGpRL/Hmyrv7NYzg==}
-    engines: {node: '>=18'}
-
   '@ai-sdk/provider@0.0.12':
     resolution: {integrity: sha512-oOwPQD8i2Ynpn22cur4sk26FW3mSy6t6/X/K1Ay2yGBKYiSpRyLfObhOrZEGsXDx+3euKy4nEZ193R36NM+tpQ==}
     engines: {node: '>=18'}
 
-  '@ai-sdk/react@0.0.20':
-    resolution: {integrity: sha512-L/PFqvT+rZd/aYZekEWXuVW3zooJEZAf2O5wL5JeKi71slBEuKZGGZP/7GzyX+8Uhl3JOg4wOdJTO/dogWzbAQ==}
+  '@ai-sdk/provider@0.0.21':
+    resolution: {integrity: sha512-9j95uaPRxwYkzQdkl4XO/MmWWW5c5vcVSXtqvALpD9SMB9fzH46dO3UN4VbOJR2J3Z84CZAqgZu5tNlkptT9qQ==}
+    engines: {node: '>=18'}
+
+  '@ai-sdk/react@0.0.49':
+    resolution: {integrity: sha512-fb6EyT/Eh4jT5OTvTGnrp+LqyJ7qdXkYosFpvXSbOkzUiehMNxSWaH5jCCX4ct+Z5ZQbGEKfyQJiolk9TTYPVg==}
     engines: {node: '>=18'}
     peerDependencies:
       react: ^18 || ^19
@@ -2214,20 +2205,8 @@ packages:
       zod:
         optional: true
 
-  '@ai-sdk/react@0.0.4':
-    resolution: {integrity: sha512-YPvp81onTxNlnOWolyjvappS5y9pMkZwWKMxrqwMimaJI4NWquPrAeHCYqzaVAb/+RKaveEGSvyYs/SD8AO6ig==}
-    engines: {node: '>=18'}
-    peerDependencies:
-      react: ^18 || ^19
-      zod: ^3.0.0
-    peerDependenciesMeta:
-      react:
-        optional: true
-      zod:
-        optional: true
-
-  '@ai-sdk/solid@0.0.14':
-    resolution: {integrity: sha512-9esGkm7/jocNELfGstrd3TYgWycXLP0OG6LXGGaEXd7v75eEp067avoLgQuPdWmzjnJD2U7N8u4wXa0lLd0WQQ==}
+  '@ai-sdk/solid@0.0.39':
+    resolution: {integrity: sha512-dX0cFdmMDA/Ua3lLvnpjWMHVN/jrXqVJHWc5vK3hBms+/O4AircSW13OFhTNXGg7UDogU+lqt1L7+S+yC/Thew==}
     engines: {node: '>=18'}
     peerDependencies:
       solid-js: ^1.7.7
@@ -2235,17 +2214,8 @@ packages:
       solid-js:
         optional: true
 
-  '@ai-sdk/solid@0.0.4':
-    resolution: {integrity: sha512-1X/vauXG+V0Hsb2P8kZFKaDrderTtB/7XdHZ/UkSMzTk8k0twx9OEXgztW8Rggh51t6sdI7mUoqAY5Khvjf01w==}
-    engines: {node: '>=18'}
-    peerDependencies:
-      solid-js: ^1.7.7
-    peerDependenciesMeta:
-      solid-js:
-        optional: true
-
-  '@ai-sdk/svelte@0.0.15':
-    resolution: {integrity: sha512-k4WwNgAddrQhumC6ogjZ/MPEk9kn3xEcD4CLX4CURX7y+641ktDIcZr5KeS+4o9U/jTrjSbYBJVr5HjoWm+Ixg==}
+  '@ai-sdk/svelte@0.0.41':
+    resolution: {integrity: sha512-A2bZdqFeRQMCym7D+7K82tBTNxt1pdeM46oS3MVJ5+Zimuqj0oq/S0TKr+sJUrfOeetmr/hEO5FJX9KxoHXYGQ==}
     engines: {node: '>=18'}
     peerDependencies:
       svelte: ^3.0.0 || ^4.0.0
@@ -2253,17 +2223,8 @@ packages:
       svelte:
         optional: true
 
-  '@ai-sdk/svelte@0.0.4':
-    resolution: {integrity: sha512-LVxg9/60ARX8AQIswyDx53HQlQQH91yUOThhUA0x9s2BcxgpDgDN37imynnoZbU7lvA5M9NvwlinkmUdJzUVTA==}
-    engines: {node: '>=18'}
-    peerDependencies:
-      svelte: ^3.0.0 || ^4.0.0
-    peerDependenciesMeta:
-      svelte:
-        optional: true
-
-  '@ai-sdk/ui-utils@0.0.12':
-    resolution: {integrity: sha512-ivveEuneZPOUKqcIqZRCr2NUD+LJC8mYfL7jJRWaCr+JZqdYZ+5uR/nc8GKCly2TcC9/qoF3zxQuZEn0c5805g==}
+  '@ai-sdk/ui-utils@0.0.36':
+    resolution: {integrity: sha512-aaVQFFp2jzmTezIf+1r1Oj0F6IXMYwT1Bx2w7nLTEeoQDxPriLL/I+0nJJWUMPztAJhmZEx5WRaPMVC4Y5tm2Q==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: ^3.0.0
@@ -2271,17 +2232,8 @@ packages:
       zod:
         optional: true
 
-  '@ai-sdk/ui-utils@0.0.4':
-    resolution: {integrity: sha512-vUfuqVOZV3MyFokAduQyJsnDP00qzyZut6mizFscXlCOmiiW3FAnu/XEnMEwCmf7yUG7O4v7Xa2zd4X1tsN5pg==}
-    engines: {node: '>=18'}
-    peerDependencies:
-      zod: ^3.0.0
-    peerDependenciesMeta:
-      zod:
-        optional: true
-
-  '@ai-sdk/vue@0.0.15':
-    resolution: {integrity: sha512-e8JBjZWV7MYdGcgiZCNp2qso/HdqJ2hSRD54oEELfiHgVf2y3FLnnRnc4M1MwyvX6WaVYvAd6+pdDgwVjU7h1Q==}
+  '@ai-sdk/vue@0.0.41':
+    resolution: {integrity: sha512-1ytM/vYtBfkfi38JhJvxq7mF/eZMthGAzRog9QYqwtMTX8HLpGAKIBsRDZ2Byg7yoHPdaxikKgp3Myj767sGvg==}
     engines: {node: '>=18'}
     peerDependencies:
       vue: ^3.3.4
@@ -6837,12 +6789,13 @@ packages:
     resolution: {integrity: sha512-0poP0T7el6Vq3rstR8Mn4V/IQrpBLO6POkUSrN7RhyY+GF/InCFShQzsQ39T25gkHhLgSLByyAz+Kjb+c2L98w==}
     engines: {node: '>=12'}
 
-  ai@3.2.1:
-    resolution: {integrity: sha512-6C2rGQLeZmhbjPBOZy2IU8aGg2c9btL8QKWS+dT2Pyxik2ue28FbEsOWQ2O1DOG/5NLX6VM6yNXMlBem3N59Cg==}
+  ai@3.3.15:
+    resolution: {integrity: sha512-Uqnq1/J6TxVliZiYruwJOrCjbfqIas4SY/FdUbuRQ4hPcW2EpyGqvvJZKYh3BW5nXj+/uTyB27aLgGoJNo4ICQ==}
     engines: {node: '>=18'}
     peerDependencies:
       openai: ^4.42.0
       react: ^18 || ^19
+      sswr: ^2.1.0
       svelte: ^3.0.0 || ^4.0.0
       zod: ^3.0.0
     peerDependenciesMeta:
@@ -6850,23 +6803,7 @@ packages:
         optional: true
       react:
         optional: true
-      svelte:
-        optional: true
-      zod:
-        optional: true
-
-  ai@3.2.22:
-    resolution: {integrity: sha512-2u2YT6cf/bTRexUtSiSDco/3/z/xlQ9iiW3y2aH05RwDlj9Q6rpALsTdjRNcglI+OBPaXUEORB/bD1dRwxob6Q==}
-    engines: {node: '>=18'}
-    peerDependencies:
-      openai: ^4.42.0
-      react: ^18 || ^19
-      svelte: ^3.0.0 || ^4.0.0
-      zod: ^3.0.0
-    peerDependenciesMeta:
-      openai:
-        optional: true
-      react:
+      sswr:
         optional: true
       svelte:
         optional: true
@@ -13336,11 +13273,6 @@ packages:
     peerDependencies:
       zod: ^3.21.4
 
-  zod-to-json-schema@3.22.5:
-    resolution: {integrity: sha512-+akaPo6a0zpVCCseDed504KBJUQpEW5QZw7RMneNmKw+fGaML1Z9tUNLnHHAC8x6dzVRO1eB2oEMyZRnuBZg7Q==}
-    peerDependencies:
-      zod: ^3.22.4
-
   zod-to-json-schema@3.23.2:
     resolution: {integrity: sha512-uSt90Gzc/tUfyNqxnjlfBs8W6WSGpNBv0rVsNxP/BVSMHMKGdthPYff4xtCHYloJGM0CFxFsb3NbC0eqPhfImw==}
     peerDependencies:
@@ -13404,9 +13336,9 @@ snapshots:
       '@ai-sdk/provider-utils': 1.0.2(zod@3.22.4)
       zod: 3.22.4
 
-  '@ai-sdk/provider-utils@0.0.14(zod@3.22.4)':
+  '@ai-sdk/provider-utils@1.0.15(zod@3.22.4)':
     dependencies:
-      '@ai-sdk/provider': 0.0.10
+      '@ai-sdk/provider': 0.0.21
       eventsource-parser: 1.1.2
       nanoid: 3.3.6
       secure-json-parse: 2.7.0
@@ -13431,88 +13363,56 @@ snapshots:
     optionalDependencies:
       zod: 3.22.4
 
-  '@ai-sdk/provider@0.0.10':
-    dependencies:
-      json-schema: 0.4.0
-
   '@ai-sdk/provider@0.0.12':
     dependencies:
       json-schema: 0.4.0
 
-  '@ai-sdk/react@0.0.20(react@18.2.0)(zod@3.22.4)':
+  '@ai-sdk/provider@0.0.21':
     dependencies:
-      '@ai-sdk/provider-utils': 1.0.2(zod@3.22.4)
-      '@ai-sdk/ui-utils': 0.0.12(zod@3.22.4)
-      swr: 2.2.0(react@18.2.0)
+      json-schema: 0.4.0
+
+  '@ai-sdk/react@0.0.49(react@18.2.0)(zod@3.22.4)':
+    dependencies:
+      '@ai-sdk/provider-utils': 1.0.15(zod@3.22.4)
+      '@ai-sdk/ui-utils': 0.0.36(zod@3.22.4)
+      swr: 2.2.5(react@18.2.0)
     optionalDependencies:
       react: 18.2.0
       zod: 3.22.4
 
-  '@ai-sdk/react@0.0.4(react@18.2.0)(zod@3.22.4)':
+  '@ai-sdk/solid@0.0.39(solid-js@1.7.8)(zod@3.22.4)':
     dependencies:
-      '@ai-sdk/provider-utils': 0.0.15(zod@3.22.4)
-      '@ai-sdk/ui-utils': 0.0.4(zod@3.22.4)
-      swr: 2.2.0(react@18.2.0)
-    optionalDependencies:
-      react: 18.2.0
-      zod: 3.22.4
-
-  '@ai-sdk/solid@0.0.14(solid-js@1.7.8)(zod@3.22.4)':
-    dependencies:
-      '@ai-sdk/ui-utils': 0.0.12(zod@3.22.4)
+      '@ai-sdk/provider-utils': 1.0.15(zod@3.22.4)
+      '@ai-sdk/ui-utils': 0.0.36(zod@3.22.4)
     optionalDependencies:
       solid-js: 1.7.8
     transitivePeerDependencies:
       - zod
 
-  '@ai-sdk/solid@0.0.4(solid-js@1.7.8)(zod@3.22.4)':
+  '@ai-sdk/svelte@0.0.41(svelte@4.2.18)(zod@3.22.4)':
     dependencies:
-      '@ai-sdk/ui-utils': 0.0.4(zod@3.22.4)
-      solid-swr-store: 0.10.7(solid-js@1.7.8)(swr-store@0.10.6)
-      swr-store: 0.10.6
-    optionalDependencies:
-      solid-js: 1.7.8
-    transitivePeerDependencies:
-      - zod
-
-  '@ai-sdk/svelte@0.0.15(svelte@4.2.18)(zod@3.22.4)':
-    dependencies:
-      '@ai-sdk/provider-utils': 1.0.2(zod@3.22.4)
-      '@ai-sdk/ui-utils': 0.0.12(zod@3.22.4)
+      '@ai-sdk/provider-utils': 1.0.15(zod@3.22.4)
+      '@ai-sdk/ui-utils': 0.0.36(zod@3.22.4)
       sswr: 2.1.0(svelte@4.2.18)
     optionalDependencies:
       svelte: 4.2.18
     transitivePeerDependencies:
       - zod
 
-  '@ai-sdk/svelte@0.0.4(svelte@4.2.18)(zod@3.22.4)':
+  '@ai-sdk/ui-utils@0.0.36(zod@3.22.4)':
     dependencies:
-      '@ai-sdk/provider-utils': 0.0.15(zod@3.22.4)
-      '@ai-sdk/ui-utils': 0.0.4(zod@3.22.4)
-      sswr: 2.1.0(svelte@4.2.18)
-    optionalDependencies:
-      svelte: 4.2.18
-    transitivePeerDependencies:
-      - zod
-
-  '@ai-sdk/ui-utils@0.0.12(zod@3.22.4)':
-    dependencies:
-      '@ai-sdk/provider-utils': 1.0.2(zod@3.22.4)
+      '@ai-sdk/provider': 0.0.21
+      '@ai-sdk/provider-utils': 1.0.15(zod@3.22.4)
+      json-schema: 0.4.0
       secure-json-parse: 2.7.0
+      zod-to-json-schema: 3.23.2(zod@3.22.4)
     optionalDependencies:
       zod: 3.22.4
 
-  '@ai-sdk/ui-utils@0.0.4(zod@3.22.4)':
+  '@ai-sdk/vue@0.0.41(vue@3.4.37(typescript@5.4.5))(zod@3.22.4)':
     dependencies:
-      '@ai-sdk/provider-utils': 0.0.15(zod@3.22.4)
-      secure-json-parse: 2.7.0
-    optionalDependencies:
-      zod: 3.22.4
-
-  '@ai-sdk/vue@0.0.15(vue@3.4.37(typescript@5.4.5))(zod@3.22.4)':
-    dependencies:
-      '@ai-sdk/provider-utils': 0.0.14(zod@3.22.4)
-      '@ai-sdk/ui-utils': 0.0.12(zod@3.22.4)
+      '@ai-sdk/provider-utils': 1.0.15(zod@3.22.4)
+      '@ai-sdk/ui-utils': 0.0.36(zod@3.22.4)
       swrv: 1.0.4(vue@3.4.37(typescript@5.4.5))
     optionalDependencies:
       vue: 3.4.37(typescript@5.4.5)
@@ -18344,7 +18244,7 @@ snapshots:
     transitivePeerDependencies:
       - '@types/react'
 
-  '@udecode/plate-basic-marks@30.5.3(@udecode/plate-common@30.4.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)':
+  '@udecode/plate-basic-marks@30.5.3(@udecode/plate-common@30.4.5(@types/react@18.2.15)(immer@10.0.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(scheduler@0.23.2)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)':
     dependencies:
       '@udecode/plate-common': 30.4.5(@types/react@18.2.15)(immer@10.0.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(scheduler@0.23.2)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)
       react: 18.2.0
@@ -18354,7 +18254,7 @@ snapshots:
       slate-hyperscript: 0.100.0(slate@0.103.0)
       slate-react: 0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0)
 
-  '@udecode/plate-block-quote@30.5.3(@udecode/plate-common@30.4.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)':
+  '@udecode/plate-block-quote@30.5.3(@udecode/plate-common@30.4.5(@types/react@18.2.15)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)':
     dependencies:
       '@udecode/plate-common': 30.4.5(@types/react@18.2.15)(immer@10.0.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(scheduler@0.23.2)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)
       react: 18.2.0
@@ -18364,7 +18264,7 @@ snapshots:
       slate-hyperscript: 0.100.0(slate@0.103.0)
       slate-react: 0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0)
 
-  '@udecode/plate-code-block@30.7.0(@udecode/plate-common@30.4.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)':
+  '@udecode/plate-code-block@30.7.0(@udecode/plate-common@30.4.5(@types/react@18.2.15)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)':
     dependencies:
       '@udecode/plate-common': 30.4.5(@types/react@18.2.15)(immer@10.0.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(scheduler@0.23.2)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)
       prismjs: 1.29.0
@@ -18405,7 +18305,7 @@ snapshots:
       clsx: 1.2.1
       is-hotkey: 0.2.0
       jotai: 2.9.3(@types/react@18.2.15)(react@18.2.0)
-      jotai-optics: 0.3.1(jotai@2.9.3(react@18.2.0))(optics-ts@2.4.1)
+      jotai-optics: 0.3.1(jotai@2.9.3(@types/react@18.2.15)(react@18.2.0))(optics-ts@2.4.1)
       jotai-x: 1.2.4(@types/react@18.2.15)(jotai@2.9.3(@types/react@18.2.15)(react@18.2.0))(react@18.2.0)
       lodash: 4.17.21
       nanoid: 3.3.7
@@ -18426,7 +18326,7 @@ snapshots:
       - react-native
       - scheduler
 
-  '@udecode/plate-floating@30.5.3(@udecode/plate-common@30.4.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)':
+  '@udecode/plate-floating@30.5.3(@udecode/plate-common@30.4.5(@types/react@18.2.15)(immer@10.0.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(scheduler@0.23.2)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)':
     dependencies:
       '@floating-ui/core': 1.6.7
       '@floating-ui/react': 0.22.3(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -18438,7 +18338,7 @@ snapshots:
       slate-hyperscript: 0.100.0(slate@0.103.0)
       slate-react: 0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0)
 
-  '@udecode/plate-heading@30.5.3(@udecode/plate-common@30.4.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)':
+  '@udecode/plate-heading@30.5.3(@udecode/plate-common@30.4.5(@types/react@18.2.15)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)':
     dependencies:
       '@udecode/plate-common': 30.4.5(@types/react@18.2.15)(immer@10.0.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(scheduler@0.23.2)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)
       react: 18.2.0
@@ -18448,7 +18348,7 @@ snapshots:
       slate-hyperscript: 0.100.0(slate@0.103.0)
       slate-react: 0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0)
 
-  '@udecode/plate-horizontal-rule@30.5.3(@udecode/plate-common@30.4.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)':
+  '@udecode/plate-horizontal-rule@30.5.3(@udecode/plate-common@30.4.5(@types/react@18.2.15)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)':
     dependencies:
       '@udecode/plate-common': 30.4.5(@types/react@18.2.15)(immer@10.0.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(scheduler@0.23.2)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)
       react: 18.2.0
@@ -18458,11 +18358,11 @@ snapshots:
       slate-hyperscript: 0.100.0(slate@0.103.0)
       slate-react: 0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0)
 
-  '@udecode/plate-link@30.5.3(@udecode/plate-common@30.4.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)':
+  '@udecode/plate-link@30.5.3(@udecode/plate-common@30.4.5(@types/react@18.2.15)(immer@10.0.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(scheduler@0.23.2)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)':
     dependencies:
       '@udecode/plate-common': 30.4.5(@types/react@18.2.15)(immer@10.0.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(scheduler@0.23.2)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)
-      '@udecode/plate-floating': 30.5.3(@udecode/plate-common@30.4.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)
-      '@udecode/plate-normalizers': 30.5.3(@udecode/plate-common@30.4.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)
+      '@udecode/plate-floating': 30.5.3(@udecode/plate-common@30.4.5(@types/react@18.2.15)(immer@10.0.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(scheduler@0.23.2)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)
+      '@udecode/plate-normalizers': 30.5.3(@udecode/plate-common@30.4.5(@types/react@18.2.15)(immer@10.0.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(scheduler@0.23.2)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       slate: 0.103.0
@@ -18470,10 +18370,10 @@ snapshots:
       slate-hyperscript: 0.100.0(slate@0.103.0)
       slate-react: 0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0)
 
-  '@udecode/plate-list@30.5.3(@udecode/plate-common@30.4.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)':
+  '@udecode/plate-list@30.5.3(@udecode/plate-common@30.4.5(@types/react@18.2.15)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)':
     dependencies:
       '@udecode/plate-common': 30.4.5(@types/react@18.2.15)(immer@10.0.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(scheduler@0.23.2)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)
-      '@udecode/plate-reset-node': 30.5.3(@udecode/plate-common@30.4.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)
+      '@udecode/plate-reset-node': 30.5.3(@udecode/plate-common@30.4.5(@types/react@18.2.15)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)
       lodash: 4.17.21
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -18482,7 +18382,7 @@ snapshots:
       slate-hyperscript: 0.100.0(slate@0.103.0)
       slate-react: 0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0)
 
-  '@udecode/plate-media@30.5.3(@udecode/plate-common@30.4.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)':
+  '@udecode/plate-media@30.5.3(@udecode/plate-common@30.4.5(@types/react@18.2.15)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)':
     dependencies:
       '@udecode/plate-common': 30.4.5(@types/react@18.2.15)(immer@10.0.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(scheduler@0.23.2)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)
       js-video-url-parser: 0.5.1
@@ -18493,7 +18393,7 @@ snapshots:
       slate-hyperscript: 0.100.0(slate@0.103.0)
       slate-react: 0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0)
 
-  '@udecode/plate-normalizers@30.5.3(@udecode/plate-common@30.4.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)':
+  '@udecode/plate-normalizers@30.5.3(@udecode/plate-common@30.4.5(@types/react@18.2.15)(immer@10.0.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(scheduler@0.23.2)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)':
     dependencies:
       '@udecode/plate-common': 30.4.5(@types/react@18.2.15)(immer@10.0.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(scheduler@0.23.2)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)
       lodash: 4.17.21
@@ -18504,7 +18404,7 @@ snapshots:
       slate-hyperscript: 0.100.0(slate@0.103.0)
       slate-react: 0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0)
 
-  '@udecode/plate-paragraph@30.5.3(@udecode/plate-common@30.4.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)':
+  '@udecode/plate-paragraph@30.5.3(@udecode/plate-common@30.4.5(@types/react@18.2.15)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)':
     dependencies:
       '@udecode/plate-common': 30.4.5(@types/react@18.2.15)(immer@10.0.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(scheduler@0.23.2)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)
       react: 18.2.0
@@ -18514,7 +18414,7 @@ snapshots:
       slate-hyperscript: 0.100.0(slate@0.103.0)
       slate-react: 0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0)
 
-  '@udecode/plate-reset-node@30.5.3(@udecode/plate-common@30.4.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)':
+  '@udecode/plate-reset-node@30.5.3(@udecode/plate-common@30.4.5(@types/react@18.2.15)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)':
     dependencies:
       '@udecode/plate-common': 30.4.5(@types/react@18.2.15)(immer@10.0.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(scheduler@0.23.2)(slate-history@0.100.0(slate@0.103.0))(slate-hyperscript@0.100.0(slate@0.103.0))(slate-react@0.108.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.103.0))(slate@0.103.0)
       react: 18.2.0
@@ -19802,77 +19702,52 @@ snapshots:
       clean-stack: 4.2.0
       indent-string: 5.0.0
 
-  ai@3.2.1(openai@4.47.1)(react@18.2.0)(solid-js@1.7.8)(svelte@4.2.18)(vue@3.4.37(typescript@5.4.5))(zod@3.22.4):
+  ai@3.3.15(openai@4.47.1)(react@18.2.0)(solid-js@1.7.8)(sswr@2.1.0(svelte@4.2.18))(svelte@4.2.18)(vue@3.4.37(typescript@5.4.5))(zod@3.22.4):
     dependencies:
-      '@ai-sdk/provider': 0.0.10
-      '@ai-sdk/provider-utils': 0.0.15(zod@3.22.4)
-      '@ai-sdk/react': 0.0.4(react@18.2.0)(zod@3.22.4)
-      '@ai-sdk/solid': 0.0.4(solid-js@1.7.8)(zod@3.22.4)
-      '@ai-sdk/svelte': 0.0.4(svelte@4.2.18)(zod@3.22.4)
-      '@ai-sdk/ui-utils': 0.0.4(zod@3.22.4)
-      '@ai-sdk/vue': 0.0.4(vue@3.4.37(typescript@5.4.5))(zod@3.22.4)
-      eventsource-parser: 1.1.2
-      json-schema: 0.4.0
-      jsondiffpatch: 0.6.0
-      nanoid: 3.3.6
-      secure-json-parse: 2.7.0
-      sswr: 2.1.0(svelte@4.2.18)
-      zod-to-json-schema: 3.22.5(zod@3.22.4)
-    optionalDependencies:
-      openai: 4.47.1
-      react: 18.2.0
-      svelte: 4.2.18
-      zod: 3.22.4
-    transitivePeerDependencies:
-      - solid-js
-      - vue
-
-  ai@3.2.22(openai@4.47.1)(react@18.2.0)(solid-js@1.7.8)(svelte@4.2.18)(vue@3.4.37(typescript@5.4.5))(zod@3.22.4):
-    dependencies:
-      '@ai-sdk/provider': 0.0.12
-      '@ai-sdk/provider-utils': 1.0.2(zod@3.22.4)
-      '@ai-sdk/react': 0.0.20(react@18.2.0)(zod@3.22.4)
-      '@ai-sdk/solid': 0.0.14(solid-js@1.7.8)(zod@3.22.4)
-      '@ai-sdk/svelte': 0.0.15(svelte@4.2.18)(zod@3.22.4)
-      '@ai-sdk/ui-utils': 0.0.12(zod@3.22.4)
-      '@ai-sdk/vue': 0.0.15(vue@3.4.37(typescript@5.4.5))(zod@3.22.4)
+      '@ai-sdk/provider': 0.0.21
+      '@ai-sdk/provider-utils': 1.0.15(zod@3.22.4)
+      '@ai-sdk/react': 0.0.49(react@18.2.0)(zod@3.22.4)
+      '@ai-sdk/solid': 0.0.39(solid-js@1.7.8)(zod@3.22.4)
+      '@ai-sdk/svelte': 0.0.41(svelte@4.2.18)(zod@3.22.4)
+      '@ai-sdk/ui-utils': 0.0.36(zod@3.22.4)
+      '@ai-sdk/vue': 0.0.41(vue@3.4.37(typescript@5.4.5))(zod@3.22.4)
       '@opentelemetry/api': 1.9.0
       eventsource-parser: 1.1.2
       json-schema: 0.4.0
       jsondiffpatch: 0.6.0
       nanoid: 3.3.6
       secure-json-parse: 2.7.0
-      sswr: 2.1.0(svelte@4.2.18)
-      zod-to-json-schema: 3.22.5(zod@3.22.4)
+      zod-to-json-schema: 3.23.2(zod@3.22.4)
     optionalDependencies:
       openai: 4.47.1
       react: 18.2.0
+      sswr: 2.1.0(svelte@4.2.18)
       svelte: 4.2.18
       zod: 3.22.4
     transitivePeerDependencies:
       - solid-js
       - vue
 
-  ai@3.2.22(openai@4.52.7)(react@18.2.0)(solid-js@1.7.8)(svelte@4.2.18)(vue@3.4.37(typescript@5.4.5))(zod@3.22.4):
+  ai@3.3.15(openai@4.52.7)(react@18.2.0)(solid-js@1.7.8)(sswr@2.1.0(svelte@4.2.18))(svelte@4.2.18)(vue@3.4.37(typescript@5.4.5))(zod@3.22.4):
     dependencies:
-      '@ai-sdk/provider': 0.0.12
-      '@ai-sdk/provider-utils': 1.0.2(zod@3.22.4)
-      '@ai-sdk/react': 0.0.20(react@18.2.0)(zod@3.22.4)
-      '@ai-sdk/solid': 0.0.14(solid-js@1.7.8)(zod@3.22.4)
-      '@ai-sdk/svelte': 0.0.15(svelte@4.2.18)(zod@3.22.4)
-      '@ai-sdk/ui-utils': 0.0.12(zod@3.22.4)
-      '@ai-sdk/vue': 0.0.15(vue@3.4.37(typescript@5.4.5))(zod@3.22.4)
+      '@ai-sdk/provider': 0.0.21
+      '@ai-sdk/provider-utils': 1.0.15(zod@3.22.4)
+      '@ai-sdk/react': 0.0.49(react@18.2.0)(zod@3.22.4)
+      '@ai-sdk/solid': 0.0.39(solid-js@1.7.8)(zod@3.22.4)
+      '@ai-sdk/svelte': 0.0.41(svelte@4.2.18)(zod@3.22.4)
+      '@ai-sdk/ui-utils': 0.0.36(zod@3.22.4)
+      '@ai-sdk/vue': 0.0.41(vue@3.4.37(typescript@5.4.5))(zod@3.22.4)
       '@opentelemetry/api': 1.9.0
       eventsource-parser: 1.1.2
       json-schema: 0.4.0
       jsondiffpatch: 0.6.0
       nanoid: 3.3.6
       secure-json-parse: 2.7.0
-      sswr: 2.1.0(svelte@4.2.18)
-      zod-to-json-schema: 3.22.5(zod@3.22.4)
+      zod-to-json-schema: 3.23.2(zod@3.22.4)
     optionalDependencies:
       openai: 4.52.7
       react: 18.2.0
+      sswr: 2.1.0(svelte@4.2.18)
       svelte: 4.2.18
       zod: 3.22.4
     transitivePeerDependencies:
@@ -23381,7 +23256,7 @@ snapshots:
 
   jose@5.6.3: {}
 
-  jotai-optics@0.3.1(jotai@2.9.3(react@18.2.0))(optics-ts@2.4.1):
+  jotai-optics@0.3.1(jotai@2.9.3(@types/react@18.2.15)(react@18.2.0))(optics-ts@2.4.1):
     dependencies:
       jotai: 2.9.3(@types/react@18.2.15)(react@18.2.0)
       optics-ts: 2.4.1
@@ -27231,7 +27106,7 @@ snapshots:
 
   ts-interface-checker@0.1.13: {}
 
-  ts-jest@29.0.5(@babel/core@7.22.9)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.22.9))(jest@29.4.1(@types/node@20.4.2)(babel-plugin-macros@3.1.0))(typescript@5.4.5):
+  ts-jest@29.0.5(@babel/core@7.22.9)(@jest/types@29.6.3)(babel-jest@29.7.0(@babel/core@7.22.9))(esbuild@0.15.18)(jest@29.4.1(@types/node@20.4.2)(babel-plugin-macros@3.1.0))(typescript@5.4.5):
     dependencies:
       bs-logger: 0.2.6
       fast-json-stable-stringify: 2.1.0
@@ -27247,6 +27122,7 @@ snapshots:
       '@babel/core': 7.22.9
       '@jest/types': 29.6.3
       babel-jest: 29.7.0(@babel/core@7.22.9)
+      esbuild: 0.15.18
 
   tsconfck@3.1.1(typescript@5.4.5):
     optionalDependencies:
@@ -28034,10 +27910,6 @@ snapshots:
   yocto-queue@0.1.0: {}
 
   zod-openapi@2.19.0(zod@3.22.4):
-    dependencies:
-      zod: 3.22.4
-
-  zod-to-json-schema@3.22.5(zod@3.22.4):
     dependencies:
       zod: 3.22.4
 

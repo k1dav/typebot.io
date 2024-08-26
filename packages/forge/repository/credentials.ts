@@ -20,6 +20,8 @@ import { litellmBlock } from '@typebot.io/litellm-block'
 import { litellmCredentialsSchema } from '@typebot.io/litellm-block/schemas'
 import { segmentBlock } from '@typebot.io/segment-block'
 import { segmentCredentialsSchema } from '@typebot.io/segment-block/schemas'
+import { groqBlock } from '@typebot.io/groq-block'
+import { groqCredentialsSchema } from '@typebot.io/groq-block/schemas'
 
 export const forgedCredentialsSchemas = {
   [openAIBlock.id]: openAICredentialsSchema,
@@ -33,4 +35,5 @@ export const forgedCredentialsSchemas = {
   [nocodbBlock.id]: nocodbCredentialsSchema,
   [litellmBlock.id]: litellmCredentialsSchema,
   [segmentBlock.id]: segmentCredentialsSchema,
+  [groqBlock.id]: groqCredentialsSchema,
 }
